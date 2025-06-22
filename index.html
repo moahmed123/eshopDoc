@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>eShop – React Native UI Ecommerce Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="eShop is a modern and feature-rich e-commerce mobile app template built using React Native. It supports both Android and iOS platforms and is based on the latest version of React Native. With over 15+ screens and 40+ reusable components, this app template is ready to power your next e-commerce project. Navigation is already implemented and paired with a beautifully designed user interface. You can jump-start your project in minutes. It also includes bonus UI components such as gradient buttons. Whether you are building a prototype or launching a real product, eShop provides a solid foundation for any e-commerce app."
+        name="description" />
+    <meta content="ThemesDesign" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/AppLogo.png">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body[data-sidebar=dark] .navbar-brand-box {
+            background: #111;
+            border-bottom: 2px solid #3d3d3d;
+        }
+
+        body[data-sidebar=dark] .vertical-menu {
+            background: #111;
+        }
+    </style>
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/AppLogo.png" alt="" height="16"
+                                    style="background: #fff; border-radius: 6px; transform: translate(-8px, 0px);">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/AppLogo.png" alt="" height="33"
+                                    style="background: #fff; border-radius: 6px;">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-backburger"></i>
+                    </button>
+
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="d-inline-block">
+                        <h5><span class="badge badge-danger float-right">v1.0.0</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Docs</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-file-document-box-outline"></i>
+                                <span>Getting Started</span>
+                            </a>
+                        </li>                        
+
+                        <li class="menu-title">Layouts</li>
+
+                        <li>
+                            <a href="screen.html" class=" waves-effect">
+                                <i class="mdi mdi-flip-horizontal"></i>
+                                <span>App Screenshot</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Other</li>
+
+                        <li>
+                            <a href="changelog.html" class=" waves-effect">
+                                <i class="mdi mdi-format-list-bulleted"></i>
+                                <span>Changelog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Getting Started</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                        <li class="breadcrumb-item active">Getting Started</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="p-lg-3">                                
+                                <h5 class="mt-0 mb-2">Introduction</h5>
+                                <p>
+                                    eShop is a modern and feature-rich e-commerce mobile app template built using React Native. It supports both Android and iOS platforms and is based on the latest version of React Native. With over 15+ screens and 40+ reusable components, this app template is ready to power your next e-commerce project.
+                                </p>
+                                <p>
+                                    Navigation is already implemented and paired with a beautifully designed user interface. You can jump-start your project in minutes. It also includes bonus UI components such as gradient buttons. Whether you are building a prototype or launching a real product, eShop provides a solid foundation for any e-commerce app.
+                                </p>                                
+                                <p>
+                                    If you have any questions that are beyond the scope of this documentation, please
+                                    feel free to email or contact us via our profile page or sent email on
+                                    <code>mohamedalaaabas93@gmail.com</code>
+                                </p>
+                            </div>
+
+                            <div class="p-lg-3">                            
+                                <h3 class="mt-0 mb-2">🚀 Features</h5>
+                                <h5>User Authentication</h5>
+                                <ul>
+                                  <li>Login with email/password</li>
+                                  <li>Social media login integration</li>
+                                  <li>User registration</li>
+                                  <li>Password recovery</li>
+                                </ul>
+                              
+                                <h5>Home Screen</h5>
+                                <ul>
+                                  <li>Search functionality</li>
+                                  <li>Category browsing</li>
+                                  <li>Featured products</li>
+                                  <li>Special deals and offers</li>
+                                  <li>Banner advertisements</li>
+                                  <li>Latest products showcase</li>
+                                </ul>
+                              
+                                <h5>Product Management</h5>
+                                <ul>
+                                  <li>Product categories</li>
+                                  <li>Search with filters</li>
+                                  <li>Product details with images and descriptions</li>
+                                  <li>Size and quantity selection</li>
+                                  <li>Related products</li>
+                                </ul>
+                              
+                                <h5>Shopping Features</h5>
+                                <ul>
+                                  <li>Shopping cart management</li>
+                                  <li>Favorites/Wishlist</li>
+                                  <li>Multi-step checkout process</li>
+                                  <li>Multiple payment methods</li>
+                                  <li>Order tracking & history</li>
+                                </ul>
+                              
+                                <h5>User Profile</h5>
+                                <ul>
+                                  <li>Profile & address management</li>
+                                  <li>Wishlist & orders</li>
+                                  <li>App settings customization</li>
+                                </ul>
+                              
+                                <h3>⚙️ Technical Features</h3>
+                                <ul>
+                                  <li>Built with React Native</li>
+                                  <li>Written in TypeScript</li>
+                                  <li>Clean & modular architecture</li>
+                                  <li>Responsive design</li>
+                                  <li>Custom reusable components</li>
+                                  <li>Form validation</li>
+                                  <li>Image upload capability</li>
+                                  <li>Secure data handling</li>
+                                </ul>
+                              
+                                <h3>📁 Project Structure</h3>
+                                <pre><code>
+                              src/
+                              ├── assets/         # Images, fonts, and other static files
+                              ├── components/     # Reusable UI components
+                              │   ├── Account/
+                              │   ├── Cart/
+                              │   ├── Category/
+                              │   └── common/
+                              ├── navigation/     # Navigation configuration
+                              ├── screens/        # Main application screens
+                              ├── services/       # API and other services
+                              ├── styles/         # Global styles
+                              └── utils/          # Utility functions and helpers
+                                </code></pre>
+                              
+                                <h2>📱 Main Screens</h2>
+                                <h3>Authentication</h3>
+                                <ul>
+                                  <li><code>LoginScreen</code>: User login</li>
+                                  <li><code>RegisterScreen</code>: New user registration</li>
+                                </ul>
+                                <h3>Core Screens</h3>
+                                <ul>
+                                  <li><code>HomeScreen</code>: Main landing page</li>
+                                  <li><code>CategoriesScreen</code>: Browse categories</li>
+                                  <li><code>ProductsScreen</code>: Filtered product list</li>
+                                  <li><code>ProductDetailsScreen</code>: Product detail page</li>
+                                  <li><code>CartScreen</code>: Manage shopping cart</li>
+                                  <li><code>CheckoutScreen</code>: Checkout steps</li>
+                                </ul>
+                                <h3>User Screens</h3>
+                                <ul>
+                                  <li><code>ProfileScreen</code>: Profile management</li>
+                                  <li><code>EditProfileScreen</code>: Edit profile</li>
+                                  <li><code>OrdersScreen</code>: Order tracking/history</li>
+                                  <li><code>FavoritesScreen</code>: Wishlist items</li>
+                                  <li><code>SettingsScreen</code>: Preferences</li>
+                                </ul>
+                              
+                                <h2>🔧 Getting Started</h2>
+                                <blockquote><strong>Note:</strong> Make sure your development environment is set up as per the <a href="https://reactnative.dev/docs/environment-setup" target="_blank">React Native setup guide</a>.</blockquote>
+                              
+                                <h3>Step 1: Start Metro</h3>
+                                <pre><code># Using pnpm
+                              pnpm start
+                                </code></pre>
+                              
+                                <h3>Step 2: Run the App</h3>
+                                <h4>Android</h4>
+                                <pre><code>pnpm run android</code></pre>
+                              
+                                <h4>iOS</h4>
+                                <pre><code># CocoaPods setup (iOS only)
+                              bundle install
+                              bundle exec pod install
+                              
+                              # Run the app
+                              pnpm run ios</code></pre>
+                              
+                                <h2>🤝 Contributing</h2>
+                                <ol>
+                                  <li>Fork the repository</li>
+                                  <li>Create a feature branch: <code>git checkout -b feature/AmazingFeature</code></li>
+                                  <li>Commit your changes: <code>git commit -m 'Add some AmazingFeature'</code></li>
+                                  <li>Push to the branch: <code>git push origin feature/AmazingFeature</code></li>
+                                  <li>Open a Pull Request</li>
+                                </ol>
+                              
+                                <h2>📚 Learn More</h2>
+                                <ul>
+                                  <li><a href="https://reactnative.dev" target="_blank">React Native Official Site</a></li>
+                                  <li><a href="https://reactnative.dev/docs/environment-setup" target="_blank">React Native Environment Setup</a></li>
+                                  <li><a href="https://reactnative.dev/docs/getting-started" target="_blank">React Native Getting Started Guide</a></li>
+                                </ul>
+                              
+                                <h2>📝 License</h2>
+                                <p>This project is licensed under the MIT License.</p>
+                            </div> <!-- end padding-->
+                        </div>
+                        <!--end card body-->
+                    </div> <!-- end card-->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2025 © Mohamed Alaa.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
+                                    href="https://codecanyon.net/user/m_alaa/portfolio" target="_blank"
+                                    class="text-muted">M.Alaa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
