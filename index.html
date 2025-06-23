@@ -162,16 +162,50 @@
                                     <code>mohamedalaaabas93@gmail.com</code>
                                 </p>
                                 <!-- APK Download Section -->
-                                <div style="width: 100%; background: #f4f4f4; padding: 40px 20px; text-align: center;">
-                                    <h2 style="font-size: 28px; margin-bottom: 20px; color: #333;">📱 Download the eShop App Now</h2>
-                                    <p style="font-size: 18px; color: #666; margin-bottom: 30px;">
-                                        Click the button to download the Android app as an APK file
-                                    </p>
-                                    <a id="downloadApkBtn" href="#" download style="background-color: #4CAF50; color: white; padding: 14px 28px;
+                                <!-- eShop App Preview & Download Section -->
+                                <div style="width: 100%; font-family: Arial, sans-serif;">
+
+                                    <!-- Expo Go Preview Section -->
+                                    <div style="background: #f9f9f9; padding: 40px 20px; text-align: center;">
+                                        <h2 style="font-size: 26px; margin-bottom: 20px; color: #333;">📱 Try the eShop
+                                            App on Expo</h2>
+                                        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">
+                                            Experience the app instantly using <strong>Expo Go</strong> without
+                                            installing anything.
+                                        </p>
+                                        <a 
+                                            href="https://expo.dev/preview/update?message=Initial%20commit%0A%0AGenerated%20by%20create-expo-app%203.4.2.&updateRuntimeVersion=1.0.0&createdAt=2025-06-23T14%3A21%3A35.568Z&slug=exp&projectId=d1eaaee7-1b85-4d36-adb0-45f3580eaf0d&group=03eef680-53cc-45c5-a599-13dbdb55309c"
+                                            style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white;
+                text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                                            🚀 Open in Expo Go
+                                        </a>
+                                        <p style="margin-top: 20px; font-size: 14px; color: #888;">
+                                            You must have the <a href="https://expo.dev/go" style="color: #007bff;">Expo
+                                                Go</a> app installed on your device.
+                                        </p>
+                                    </div>
+
+                                    <!-- Divider -->
+                                    <div style="height: 30px;"></div>
+
+                                    <!-- APK Download Section -->
+                                    <div style="background: #f9f9f9; padding: 40px 20px; text-align: center;">
+                                        <h2 style="font-size: 26px; margin-bottom: 20px; color: #333;">📦 Download
+                                            Android APK</h2>
+                                        <p style="font-size: 16px; color: #666; margin-bottom: 30px;">
+                                            Don’t have Expo Go? You can also download and install the app directly on
+                                            Android.
+                                        </p>
+                                        <a id="downloadApkBtn" href="#" download style="background-color: #4CAF50; color: white; padding: 14px 28px;
                                         text-decoration: none; font-size: 18px; border-radius: 8px;">
-                                        ⬇️ Download APK
-                                    </a>
+                                            ⬇️ Download APK
+                                        </a>
+                                        <p style="margin-top: 20px; font-size: 14px; color: #888;">
+                                            Works on Android 5.0 and above
+                                        </p>
+                                    </div>
                                 </div>
+                                <!--- End -->
                             </div>
 
                             <div class="p-lg-3">
@@ -357,18 +391,18 @@
     <script src="assets/js/app.js"></script>
     <script>
         document.getElementById("downloadApkBtn").addEventListener("click", function (e) {
-          e.preventDefault();
-          
-          const localPath = "./assets/apk/eShop.apk";
-    
-          const a = document.createElement("a");
-          a.href = localPath;
-          a.download = "eShop.apk";
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
+            e.preventDefault();
+
+            const localPath = "./assets/apk/eShop.apk";
+
+            const a = document.createElement("a");
+            a.href = localPath;
+            a.download = "eShop.apk";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
         });
-      </script>
+    </script>
 
 </body>
 
