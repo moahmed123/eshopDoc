@@ -1,254 +1,274 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>eShop – React Native UI Ecommerce Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="eShop is a modern and feature-rich e-commerce mobile app template built using React Native. It supports both Android and iOS platforms and is based on the latest version of React Native. With over 15+ screens and 40+ reusable components, this app template is ready to power your next e-commerce project. Navigation is already implemented and paired with a beautifully designed user interface. You can jump-start your project in minutes. It also includes bonus UI components such as gradient buttons. Whether you are building a prototype or launching a real product, eShop provides a solid foundation for any e-commerce app." name="description" />
-        <meta content="ThemesDesign" name="author" />        
-    
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/AppLogo.png">
+<head>
+    <meta charset="utf-8" />
+    <title>eShop – React Native UI Ecommerce Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="eShop is a modern and feature-rich e-commerce mobile app template built using React Native. It supports both Android and iOS platforms and is based on the latest version of React Native. With over 15+ screens and 40+ reusable components, this app template is ready to power your next e-commerce project. Navigation is already implemented and paired with a beautifully designed user interface. You can jump-start your project in minutes. It also includes bonus UI components such as gradient buttons. Whether you are building a prototype or launching a real product, eShop provides a solid foundation for any e-commerce app."
+        name="description" />
+    <meta content="ThemesDesign" name="author" />
 
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-        <style>
-            body[data-sidebar=dark] .navbar-brand-box {
-                background: #111;
-                border-bottom: 2px solid #3d3d3d;
-            }
-            body[data-sidebar=dark] .vertical-menu {
-                background: #111;
-            }
-        </style>
-    </head>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/AppLogo.png">
 
-    <body data-sidebar="dark">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body[data-sidebar=dark] .navbar-brand-box {
+            background: #111;
+            border-bottom: 2px solid #3d3d3d;
+        }
 
-        <!-- Begin page -->
-        <div id="layout-wrapper">
+        body[data-sidebar=dark] .vertical-menu {
+            background: #111;
+        }
+    </style>
+</head>
 
-            <header id="page-topbar">
-                <div class="navbar-header">
-                    <div class="d-flex">
-                        <!-- LOGO -->
-                        <div class="navbar-brand-box" style="padding: 10px;"> 
+<body data-sidebar="dark">
 
-                            <a href="index.html" class="logo logo-light">
-                                <span class="logo-sm">
-                                    <img src="assets/images/AppLogo.png" alt="" height="80" width="80" style="background: #fff; border-radius: 6px;transform: translate(-8px, 0px);">
-                                </span>
-                                <span class="logo-lg">
-                                    <img src="assets/images/AppLogo.png" alt="" height="80" width="80"style="background: #fff; border-radius: 6px;">
-                                </span>
-                            </a>
-                        </div>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
 
-                        <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
-                            <i class="mdi mdi-backburger"></i>
-                        </button>
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box" style="padding: 10px;">
 
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/AppLogo.png" alt="" height="80" width="80"
+                                    style="background: #fff; border-radius: 6px;transform: translate(-8px, 0px);">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/AppLogo.png" alt="" height="80" width="80"
+                                    style="background: #fff; border-radius: 6px;">
+                            </span>
+                        </a>
                     </div>
 
-                    <div class="d-flex">
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-backburger"></i>
+                    </button>
 
-                        <div class="d-inline-block">
-                            <h5><span class="badge badge-danger float-right">v1.0.0</span></h5>
-                        </div>
-            
-                    </div>
                 </div>
-            </header>
 
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="vertical-menu">
+                <div class="d-flex">
 
-                <div data-simplebar class="h-100">
-
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
-                        <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title">Docs</li>
-
-                            <li>
-                                <a href="index.html" class="waves-effect">
-                                    <i class="mdi mdi-file-document-box-outline"></i>
-                                    <span>Getting Started</span>
-                                </a>
-                            </li>                            
-
-                            <li class="menu-title">Layouts</li>
-
-                            <li>
-                                <a href="screen.html" class=" waves-effect">
-                                    <i class="mdi mdi-flip-horizontal"></i>
-                                    <span>App Screenshot</span>
-                                </a>
-                            </li>
-                        
-
-                            <li class="menu-title">Other</li>
-
-                            <li>
-                                <a href="changelog.html" class=" waves-effect">
-                                    <i class="mdi mdi-format-list-bulleted"></i>
-                                    <span>Changelog</span>
-                                </a>
-                            </li>
-
-                        </ul>
-
+                    <div class="d-inline-block">
+                        <h5><span class="badge badge-danger float-right">v1.0.0</span></h5>
                     </div>
-                    <!-- Sidebar -->
+
                 </div>
             </div>
-            <!-- Left Sidebar End -->
+        </header>
 
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
 
-                <div class="page-content">
-                    <div class="container-fluid">
+            <div data-simplebar class="h-100">
 
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0 font-size-18">App Screenshot Pages </h4>
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Docs</li>
 
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
-                                            <li class="breadcrumb-item active">App Screenshot Pages </li>
-                                        </ol>
-                                    </div>
-                                    
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-file-document-box-outline"></i>
+                                <span>Getting Started</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Layouts</li>
+
+                        <li>
+                            <a href="screen.html" class=" waves-effect">
+                                <i class="mdi mdi-flip-horizontal"></i>
+                                <span>App Screenshot</span>
+                            </a>
+                        </li>
+
+
+                        <li class="menu-title">Other</li>
+
+                        <li>
+                            <a href="changelog.html" class=" waves-effect">
+                                <i class="mdi mdi-format-list-bulleted"></i>
+                                <span>Changelog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">App Screenshot Pages </h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                        <li class="breadcrumb-item active">App Screenshot Pages </li>
+                                    </ol>
                                 </div>
+
                             </div>
-                        </div>     
-                        <!-- end page title -->
+                        </div>
+                    </div>
+                    <!-- end page title -->
 
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="p-lg-1">
-                                    <p>
-                                        You can Show All Screenshot For App eshop
-                                    </p>
-                                </div>                        
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="p-lg-1">
+                                <p>
+                                    You can Show All Screenshot For App eshop
+                                </p>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/1.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Home Page eShop</h5>
-                                                Show Products Categore
-                                        </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/1.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Home Page eShop</h5>
+                                        Show Products Categore
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/11.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Wishlist Page </h5>                                            
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/11.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Wishlist Page </h5>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/5.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Search Page</h5>
-                                            Seraching For Products by Name It.
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/5.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Search Page</h5>
+                                        Seraching For Products by Name It.
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/5.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Search Page</h5>
-                                            Seraching For Products by Name It. and not found page 
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/5.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Search Page</h5>
+                                        Seraching For Products by Name It. and not found page
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/9.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Profile Page</h5>
-                                            Profile page show some of pages and can logout for it ur account                                            
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/9.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Profile Page</h5>
+                                        Profile page show some of pages and can logout for it ur account
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/12.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Setting Page </h5>
-                                            you Can disabled you logo From app each hide it.
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/12.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Setting Page </h5>
+                                        you Can disabled you logo From app each hide it.
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/20.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Login Page </h5>                                            
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/20.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Login Page </h5>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/4.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Register page </h5>
-                                            Validation for data on  Register page 
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/4.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Register page </h5>
+                                        Validation for data on Register page
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/18.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">chackout Page </h5>
-                                             included the Payment Method | Paypal | and pay by cash 
-                                        </div>
-                                    </div> <!-- end col -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/23.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Home Page eShop black</h5>
-                                                Show Home Page
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/18.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">chackout Page </h5>
+                                        included the Payment Method | Paypal | and pay by cash
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/4.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Register page </h5>                                            
-                                        </div>
-                                    </div>                                
-                                    <!----------->
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/16.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>                                            
-                                        </div>
-                                    </div> <!-- end col -->
+                                </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/23.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Home Page eShop black</h5>
+                                        Show Home Page
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/4.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Register page </h5>
+                                    </div>
+                                </div>
+                                <!----------->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/16.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
+                                    </div>
+                                </div> <!-- end col -->
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/15.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
-                                            Other Product 
-                                        </div>
-                                    </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/15.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
+                                        Other Product
+                                    </div>
+                                </div> <!-- end col -->
 
-                                  
-                                    <!-- end col -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/16.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
-                                            Other Product 
-                                        </div>
-                                    </div> <!-- end col -->
 
-                                    
-                                   
-                                    
-                                    <!-- <div class="col-lg-4 col-md-6">
+                                <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/16.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
+                                        Other Product
+                                    </div>
+                                </div> <!-- end col -->
+
+
+
+
+                                <!-- <div class="col-lg-4 col-md-6">
                                         <div class="border p-3 text-center mb-3">
                                             <img src="assets/images/screenshot/33.png" alt="image" class="img-fluid shadow"/>
                                             <h5 class="font-weight-semibold font-size-16 mt-3">Product page </h5>
@@ -256,98 +276,108 @@
                                         </div>
                                     </div> end col -->
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/2.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Categore eShop</h5>                                                
-                                        </div>
-                                    </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/2.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Categore eShop</h5>
+                                    </div>
+                                </div> <!-- end col -->
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/10.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">My Order eShop</h5>                                            
-                                        </div>
-                                    </div> <!-- end col -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/9.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Edit Profile eshop</h5>
-                                            Show Edit Profile
-                                        </div>
-                                    </div> <!-- end col -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/7.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Profile eShop</h5>
-                                                Show Profile
-                                        </div>
-                                    </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/10.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">My Order eShop</h5>
+                                    </div>
+                                </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/9.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Edit Profile eshop</h5>
+                                        Show Edit Profile
+                                    </div>
+                                </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/7.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Profile eShop</h5>
+                                        Show Profile
+                                    </div>
+                                </div> <!-- end col -->
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/8.png" alt="image" class="img-fluid shadow"/>                                                                                        
-                                        </div>
-                                    </div> <!-- end col -->
-                                  
-
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/3.png" alt="image" class="img-fluid shadow"/>    
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">Cart page </h5>                                        
-                                        </div>
-                                    </div> <!-- end col -->
-
-                                    
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/8.png" alt="image"
+                                            class="img-fluid shadow" />
+                                    </div>
+                                </div> <!-- end col -->
 
 
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="border p-3 text-center mb-3">
-                                            <img src="assets/images/screenshot/6.png" alt="image" class="img-fluid shadow"/>
-                                            <h5 class="font-weight-semibold font-size-16 mt-3">filter  </h5>                                            
-                                        </div>
-                                    </div> <!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/3.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">Cart page </h5>
+                                    </div>
+                                </div> <!-- end col -->
 
-                                </div>
-                                <!-- end row -->
+
+
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="border p-3 text-center mb-3">
+                                        <img src="assets/images/screenshot/6.png" alt="image"
+                                            class="img-fluid shadow" />
+                                        <h5 class="font-weight-semibold font-size-16 mt-3">filter </h5>
+                                    </div>
+                                </div> <!-- end col -->
 
                             </div>
+                            <!-- end row -->
+
                         </div>
+                    </div>
 
 
-                    </div> <!-- container-fluid -->
-                </div>
-                <!-- End Page-content -->
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
 
-                
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                2025 © Mohamed Alaa.
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="text-sm-right d-none d-sm-block">
-                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://codecanyon.net/user/m_alaa/portfolio" target="_blank" class="text-muted">M.Alaa</a>
-                                </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span id="year"></span> © Mohamed Alaa.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by M.Alaa
                             </div>
                         </div>
                     </div>
-                </footer>
-            </div>
-            <!-- end main content-->
-
+                </div>
+            </footer>
         </div>
-        <!-- END layout-wrapper -->
+        <!-- end main content-->
 
-        <!-- JAVASCRIPT -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
+    </div>
+    <!-- END layout-wrapper -->
 
-        <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/app.js"></script>
 
-    </body>
+</body>
+
 </html>

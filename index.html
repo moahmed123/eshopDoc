@@ -158,8 +158,7 @@
                                 </p>
                                 <p>
                                     If you have any questions that are beyond the scope of this documentation, please
-                                    feel free to email or contact us via our profile page or sent email on
-                                    <code>mohamedalaaabas93@gmail.com</code>
+                                    feel free to email or contact us via our profile page.
                                 </p>
                                 <!-- APK Download Section -->
                                 <!-- eShop App Preview & Download Section -->
@@ -173,8 +172,7 @@
                                             Experience the app instantly using <strong>Expo Go</strong> without
                                             installing anything.
                                         </p>
-                                        <a 
-                                            href="https://expo.dev/preview/update?message=Initial%20commit%0A%0AGenerated%20by%20create-expo-app%203.4.2.&updateRuntimeVersion=1.0.0&createdAt=2025-06-23T14%3A21%3A35.568Z&slug=exp&projectId=d1eaaee7-1b85-4d36-adb0-45f3580eaf0d&group=03eef680-53cc-45c5-a599-13dbdb55309c"
+                                        <a href="https://expo.dev/preview/update?message=Initial%20commit%0A%0AGenerated%20by%20create-expo-app%203.4.2.&updateRuntimeVersion=1.0.0&createdAt=2025-06-23T14%3A21%3A35.568Z&slug=exp&projectId=d1eaaee7-1b85-4d36-adb0-45f3580eaf0d&group=03eef680-53cc-45c5-a599-13dbdb55309c"
                                             style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white;
                 text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
                                             🚀 Open in Expo Go
@@ -363,13 +361,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            2025 © Mohamed Alaa.
+                            <span id="year"></span>
+                            © Mohamed Alaa.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-right d-none d-sm-block">
-                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
-                                    href="https://codecanyon.net/user/m_alaa/portfolio" target="_blank"
-                                    class="text-muted">M.Alaa</a>
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by M.Alaa
                             </div>
                         </div>
                     </div>
@@ -387,7 +384,9 @@
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
-
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="assets/js/app.js"></script>
     <script>
         document.getElementById("downloadApkBtn").addEventListener("click", function (e) {

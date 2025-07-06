@@ -165,11 +165,11 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
-                                2025 © Mohamed Alaa.
+                                  <span id="year"></span> © Mohamed Alaa.
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-right d-none d-sm-block">
-                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://codecanyon.net/user/m_alaa/portfolio" target="_blank" class="text-muted">M.Alaa</a>
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by M.Alaa
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,9 @@
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
-
+<script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
         <script src="assets/js/app.js"></script>
 
     </body>
