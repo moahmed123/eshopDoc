@@ -201,7 +201,7 @@
                     </p> -->
                     <div style="margin: 30px 0 30px 0;">
                         <a data-wow-delay=".5s" href="https://your-apk-link.com/app-release.apk" target="_blank"
-                            class="btn" id="downloadApkBtn"
+                            class="btn" id="dowApkFitnessApp"
                             style="background-color: '#009688';background-color: #eaeaea;color: #606060;padding: 12px 15px;margin-right: 10px;">
                             <i class="fa fa-android wow fadeInUp" aria-hidden="true"
                                 style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"></i>
@@ -230,10 +230,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
     <section id="screenshot" class="screen-shots" data-parallax="scroll"
         data-image-src='https://lh3.googleusercontent.com/eYzF0cbeJaF0S2Jlhk2D4kFVMGRIyChBKUkVWOiHd5E_bx8BcKElci-pBylqdpcFqPaH8g9GxIp2skOI3-wJrewXIJ-gA1UK07FxPlnUnzFO5hdBoFbcBJLm1j_TtkX5JcgKz3VONtcLf569XlAQvKYDAv-0zyaTkHv9p1YB7t5UwPD-0jW7SWR3G442N9L3alIfhT02EUvmk8MLIUqAsIKd2X6OdSHH8UdvmCEvw98Hgihu5J4nbRmFZ6YmVph0T34D6pQnIinQQfDmZtDbjOGPd1GoTq6yPfZpu0NAPpszNOCJbMQ-IMk_TIPVCckjN2VM2abaxIPeJTFGDus-bwdT-RTRYKSX70p34XqqUKlivuMAV4BCBfCTDd6PrRRA9N5x_bHx_1Mfqpnuhq5qzGN5PJJO3kAoLM4yB0S3K459AwEXlLV4ysS-VrGoB3CXf827FJazObfUuBgji09-qYNfvPC3mvAPDVnBviFg2SzdVU2PDdbusmTc_WMuYrHBEQx8KcXTULu-iYhk5B6CFYwXQYOoUA2r2Tn1PRNRLW3zC3LV7cTxnkuPM7j190bEOi7x9F7D58MPvUKFU4wkdkqPdXGMTJQoIlfQ0TV1rBkE0jD53-CcCGqNiQ6JbOcE9Ltm8q7R3s9sQjZp9RO8Kr7yayPXYyqO=w750-h500-no'>
@@ -445,36 +441,12 @@
                 </div>
                 <!-- End First price -->
                 <!-- Start First price -->
-                <div class="col-md-4 first-div wow fadeIn" data-wow-delay=".3s">
-                    <!-- <div class="container-pricing-two text-center">
-                        <div class='details-price-two'>
-                            <div class="price-two">
-                                <span>$25.00</span>
-                                <span class="time-two">/month</span>
-                            </div>
-                            <h4 class="type-price-two">BUSINESS</h4>                            
-                        </div>
-                        <div class="features-price-two">
-                            <ul>
-                                <li>2app (extra)</li>
-                                <li>normal support</li>
-                                <li>2app (extra)</li>
-                                <li>normal support</li>
-                                <li>2app (extra)</li>
-                                <li>normal support</li>
-                            </ul>                            
-                        </div>
-                        <div class="price-btn-two">
-                            <a class="btn-appsun btn">place an Order</a>                            
-                        </div>
-                        
-                    </div> -->
+                <div class="col-md-4 first-div wow fadeIn" data-wow-delay=".3s">                   
                 </div>
                 <!-- End First price -->
             </div>
         </div>
     </section>
-
 
     <section class="teams-app">
         <div class="container">
@@ -551,11 +523,6 @@
         </div>
     </section>
 
-
-
-
-
-
     <footer>
         <div class="container">
             <div class="row text-center">
@@ -606,15 +573,13 @@
     <!-- formsubmit.js / main.js / changecolor.js -->
     <script src="js/all.js"></script>
     <script>
-
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
+    </script>
+    <script>
         //  Download Apk Fitness app 
-        document.getElementById("downloadApkBtn").addEventListener("click", function (e) {
+        document.getElementById("dowApkFitnessApp").addEventListener("click", function (e) {
             e.preventDefault();
-
             const localPath = "./assets/apk/app-Fitness.apk";
-
             const a = document.createElement("a");
             a.href = localPath;
             a.download = "eShop.apk";
