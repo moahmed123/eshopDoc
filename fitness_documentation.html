@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness App Documentation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #2c3e50;
+    }
+
+    code,
+    pre {
+      background: #f0f0f0;
+      padding: 0.5rem;
+      border-radius: 4px;
+      display: block;
+      white-space: pre-wrap;
+    }
+
+    .folder-structure {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      border-left: 5px solid #3498db;
+      font-family: monospace;
+      white-space: pre;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>📱 Fitness App (React Native)</h1>
+  <p>A modern fitness mobile application built with React Native CLI, focused on helping users track workouts, view
+    summaries, monitor progress, and manage personal fitness data.</p>
+
+  <h2>📂 Project Structure</h2>
+  <div class="folder-structure">
+    src/<br />
+    ├── ThemeContext/<br />
+    │   └── ThemeContext.tsx          # Theme management<br />
+    ├── navigation/<br />
+    │   ├── AppNavigator.tsx          # Main navigation<br />
+    │   └── TabNavigator.tsx          # Bottom tab navigation<br />
+    ├── screens/<br />
+    │   ├── HomeScreen.tsx            # Main dashboard<br />
+    │   ├── WorkoutDetailsScreen.tsx  # Workout details<br />
+    │   ├── WorkoutSummaryScreen.tsx  # Post-workout summary<br />
+    │   ├── ProfileScreen.tsx         # User profile<br />
+    │   ├── ActivityScreen.tsx        # Activity tracking<br />
+    │   └── SettingsScreen.tsx        # App settings<br />
+    ├── components/<br />
+    │   ├── home/                     # Home screen components<br />
+    │   ├── sections/                 # Reusable sections<br />
+    │   └── Workouts/                 # Workout components<br />
+    ├── styles/<br />
+    │   ├── getColors.ts              # Color system<br />
+    │   └── use*Components.ts         # Component-specific styles<br />
+    └── assets/<br />
+        └── *.png                      # Images and icons
+  </div>
+
+  <h2>📌 Key Features</h2>
+  <ul>
+    <li>🏋️‍♂️ Workout tracking with timers and reps</li>
+    <li>📊 Post-workout summaries</li>
+    <li>📅 Activity and history overview</li>
+    <li>👤 Personal profile with customization</li>
+    <li>⚙️ Theme toggling and user settings</li>
+    <li>📱 Responsive and customizable UI</li>
+  </ul>
+
+  <h2>🔧 Tech Stack</h2>
+  <ul>
+    <li>React Native CLI</li>
+    <li>TypeScript</li>
+    <li>React Navigation</li>
+    <li>Context API (for theme)</li>
+    <li>Modular component design</li>
+    <li>Custom style hooks</li>
+  </ul>
+<h2> ✨ Features: </h2>
+  <ul>
+    <li>💪 Personalized workout plans (strength, cardio, HIIT, etc.)</li>
+    <li>📆 Weekly training schedules</li>
+    <li>📈 Progress tracker with charts</li>
+    <li>🎧 Video and audio guidance for each workout</li>
+    <li>🧘 Warm-up & cool-down routines</li>
+    <li>🔔 Daily reminders & motivational tips</li>
+    <li>🎯 Goal setting (weight loss, muscle gain, flexibility)</li>
+    <li>🌑 Dark mode support</li>
+  </ul>
+
+  <h2>🚀 How to Run</h2>
+  <ol>
+    <li>Install dependencies:
+      <pre><code>npm install
+# or
+yarn</code></pre>
+    </li>
+    <li>Start the app:
+      <pre><code>npx react-native run-android
+# or
+npx react-native run-ios</code></pre>
+    </li>
+  </ol>
+
+  <h2>📄 Notes</h2>
+  <ul>
+    <li>All components are separated based on screen or reuse.</li>
+    <li>Theming is handled globally via <code>ThemeContext</code>.</li>
+    <li>Navigation uses both stack and tab navigators for flexibility.</li>
+    <li>Styles are implemented with hooks for maintainability and scalability.</li>
+  </ul>
+
+</body>
+
+</html>
