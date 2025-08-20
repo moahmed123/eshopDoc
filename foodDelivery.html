@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""><!-- Description In Google-->
+    <meta name="author" content=""> <!-- Name Mohamed Alaa-->
+    <title>FOOD DELIVERY</title><!-- Title In Tab Put Your Porject Name -->
+
+    <link rel="icon" href="./assets/images/IconDelivery80.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet"><!-- File Animation For css -->
+    <!-- Font-awesome -->
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Font  -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Monoton|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i>"
+        rel="stylesheet">
+    <!-- Google Font  -->
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+    <!-- style styles for this template -->
+    <link href="css/slick.css" rel="stylesheet">
+
+    <link href="css/slick-theme.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <!-- responsive styles for this template -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Start Color Theme appSun -->
+    <link href="css/color/styleFoodDelivery.css" rel="stylesheet" id='color_change'>
+    <!-- End Color Theme appSun -->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .screen-shots:after {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            transform: translate(0, 17px);
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+        }
+
+        .navbar.navbar-default.PR-black {
+            background-color: transparent
+        }
+
+        .navbar-default {
+            background-color: #000000cc;
+        }
+
+
+        .app-switch-btn:hover {
+            background: #ff801d;
+            color: #fff;
+        }
+
+        .app-switch-btn.active {
+            background: #ff801d;
+            color: #fff;
+        }
+
+        .screen-shots.non-aftar:after {
+            content: '';
+            display: none !important;
+        }
+
+        .screen-shots.non-aftar .slick-next:before,
+        .screen-shots.non-aftar .slick-prev:before {
+            color: #333;
+        }
+
+        .testimonial .slick-slide img {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+        .testimonial .slick-dots li.slick-active {
+            background: #ff8c2e;
+        }
+    </style>
+</head>
+
+<body class='scroll-hide font-defualt'>
+    <!-- Start Loading -->
+    <div class="loading" style="
+    background: #FF6F00;  /* fallback */
+    background: linear-gradient(to right, #FF6F00, #FF8F33);
+    background: -webkit-linear-gradient(to right, #FF6F00, #FF8F33);
+    background: -moz-linear-gradient(to right, #FF6F00, #FF8F33);
+    background: -o-linear-gradient(to right, #FF6F00, #FF8F33);
+    background: -ms-linear-gradient(to right, #FF6F00, #FF8F33);  
+    ">
+        <h1 class="ml8">
+            <span class="letters-container">
+                <span class="letters letters-left">FoodDelivery</span>
+            </span>
+            <span class="circle circle-white"></span>
+            <span class="circle circle-dark" style="background-color: rgb(231 110 15);"></span>
+            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+        </h1>
+    </div>
+    <!-- End Loading -->
+
+    <nav class="navbar navbar-default PR-black" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed PR-button" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation Food Delivery </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Name Of Porject For You Change Up To You 
+                EX:<a class="navbar-brand" href="#">name<small>name</small></a> 
+                mobile app .
+          -->
+                <a class="navbar-brand smoothScroll" href="#home">
+                    <!-- Logo mobile -->
+                    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                    FoodDelivery
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right black-nav">
+                    <li id="nav_home" class='active'>
+                        <a href="#home" class="smoothScroll nav-active">Home</a>
+                    </li>
+                    <li id="nav_about">
+                        <a href="#about" class="smoothScroll">About</a>
+                    </li>
+                    <li id="nav_features">
+                        <a href="#features" class="smoothScroll">Features</a>
+                    </li>
+                    <li id="nav_screenshot">
+                        <a href="#screenshot" class="smoothScroll"> Screenshot</a>
+                    </li>
+                    <li id="nav_price">
+                        <a href="#price" class="smoothScroll">Price</a>
+                    </li>
+                    <li id="nav_blog">
+                        <a href="#blog" class="smoothScroll">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- == Section Home Page == -->
+    <section id="home" class="homeparticles homePRafter">
+        <div id="particles-js-black"></div>
+        <div class="container">
+            <div class="row cell">
+                <div class="col-md-12 text-center wow fadeIn" data-wow-delay=".1s">
+                    <!-- Name Of App For You -->
+                    <h1 style="font-size: 80px ;"> FOOD DELIVERY </h1>
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        Food Delivery is a complete mobile solution built with React Native CLI & Expo, featuring two
+                        applications <strong>User App &</strong> <strong>Delivery App</strong>,                       
+                    </p>
+                    <!-- Botton For Go To About -->
+                    <a class='btn-appsun btn wow fadeInUp' href="#about" data-wow-delay=".6s" class="smoothScroll">
+                        about More Apps </a>
+                    <a class='btn wow fadeInUp' href="./food_delivery_doc.html" target="_blank"
+                        style="color: #333;font-weight: 500;text-decoration: underline;" data-wow-delay=".6s"
+                        class="smoothScroll">
+                        Apps Doc > </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Food Delivery App – Complete Mobile Solution</h2>
+                    <p class="wow fadeInUp">
+                        Food Delivery is a complete mobile solution built with <b>React Native CLI & Expo</b>,
+                        featuring two applications:
+                    </p>
+
+                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                        <b>User App</b> – for browsing restaurants, adding meals to cart, placing orders.
+                    </p>
+
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        <b>Delivery App</b> – for drivers/delivery agents to manage assigned orders, update delivery status.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay=".4s">
+                        Multi-language support: <b>Arabic & English</b> with instant switch.
+                    </p>
+
+                    <p class="wow fadeInUp" data-wow-delay=".5s">
+                        The project includes <b>30+ ready-to-use screens</b> with modern UI and seamless
+                        navigation.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay=".5s">
+                        Perfect for launching your own food delivery business or learning React Native development.
+                    </p>
+
+                    <div class="icon-company">
+                        <!-- Icon For android -->
+                        <i class="fa fa-android wow fadeInUp" data-wow-delay=".5s" aria-hidden="true"></i>
+                        <!-- Icon For Apple -->
+                        <i class="fa fa-apple wow fadeInUp" data-wow-delay=".7s" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center hidden-sm hidden-xs">
+                    <img alt="img-app-loading" src="./assets/images/about.png"
+                        class="img-responsive img-center wow fadeInRight" data-wow-delay=".3s">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="extra-features extra-two" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 hidden-xs text-center wow fadeIn">
+                    <!-- Img For It Feature -->
+                    <img alt="img-app-loading" data-wow-delay=".2s" src="./assets/images/DarkAndLang.png"
+                        class="img-responsive img-center wow fadeInUp">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 container-extra text-left wow fadeIn">
+                    <h3 class="wow fadeInUp" data-wow-delay=".2s" style="visibility: visible;animation-delay: 0.2s;animation-name: fadeInUp;font-family: Roboto, sans-serif;
+                        font-weight: 100;line-height: 55px; padding-bottom: 10px; padding-top: 0;">
+                        Food Delivery App – Modern &amp; Flexible
+                    </h3>
+                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                        It comes with <b>dual language support (Arabic & English)</b> for a global audience
+                        and <b>Dark/Light mode</b> to match user preferences.
+                        Designed with <b>30+ ready-to-use screens</b> featuring clean UI and smooth navigation.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        <b>User App</b> allows customers to explore restaurants, browse menus, add meals to their cart,
+                        place orders, and track deliveries in real-time with an intuitive interface.
+                    </p>
+
+                    <p class="wow fadeInUp" data-wow-delay=".4s">
+                        <b>Delivery App</b> empowers drivers with smart tools to manage assigned orders,
+                        view pickup & drop-off locations, and update delivery status seamlessly.
+                    </p>
+
+                    <p class="wow fadeInUp" data-wow-delay=".6s">
+                        Perfect solution for launching your own <b>food delivery business</b>,
+                        or as a <b>learning project</b> to master React Native development with modern best practices.
+                    </p>
+                    <!-- <a class="btn-appsun btn">More About</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshot" class="screen-shots user-app non-aftar" data-parallax="scroll">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center" style="color:#333;">User App Screenshots</h2>
+                <p class="text-center" style="color:#333;">
+                    It allows customers to explore restaurants, browse menus, add meals to their cart, place orders, and
+                    track deliveries in real-time with an intuitive interface.
+                </p>
+                <div class="screenshot-buttons"
+                    style="padding: 5px 0 50px 0;margin: 0 auto;width: 100%;text-align: center;">
+                    <button onclick="showApp('user_app')" class="btn app-switch-btn user_app active"
+                        style="margin-right: 10px;">User App </button>
+                    <button onclick="showApp('delivery_app')" class="btn app-switch-btn delivery_app">Delivery App
+                    </button>
+                </div>
+                <div class="col-md-12 slider-screen-shot app-one">
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshot_delivery" class="screen-shots non-aftar delivery-app" style="display: none;"
+        data-parallax="scroll">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center" style="color:#333;">Delivery App Screenshots</h2>
+                <p class="text-center" style="color:#333;">
+                    It empowers drivers with smart tools to manage assigned orders, view pickup & drop-off locations,
+                    and update delivery status seamlessly.
+                </p>
+                <div class="screenshot-buttons"
+                    style="padding: 5px 0 50px 0;margin: 0 auto;width: 100%;text-align: center;">
+                    <button onclick="showApp('user_app')" class="btn app-switch-btn user_app"
+                        style="margin-right: 10px;">User App </button>
+                    <button onclick="showApp('delivery_app')" class="btn app-switch-btn delivery_app active">Delivery
+                        App
+                    </button>
+                </div>
+                <div class="col-md-12 slider-screen-shot app-one">
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+                    <div>
+                        <img alt="img-app-loading" src='./assets/images/screenshot/1.png'
+                            class="img-responsive img-center">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-show" style="background-color: #fafafa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 text-video wow fadeIn">
+                    <h2>How To Work</h2>
+                    <p>
+                        Discover how our app makes your journey easier and faster.
+                        Watch this quick video to see step-by-step how everything works smoothly.
+                    </p>
+                    <div class="btn-container">
+                        <a class="popup-appsun play-video" href="https://www.youtube.com/watch?v=Hn89qD03Tzc">
+                            <!-- img Or Icon To Set It  -->
+                            <img alt="img-app-loading"
+                                src="https://lh3.googleusercontent.com/Z_7h95eFJ5P3SRbj0scNVj2BWEUexZaaelhvAn-q_b4JawtYzjE6Qo-v5WZfGqXz8yM0iIs3omwLg7jA4eRfuQbX07FNmJuWNxLWP4_tj4LO7LMh-t3lyOcG00pzhkyJdxRZsCOSfPAVTd7paGwViDXldIhwGtEL1bnvdYBwXLPnWW4SQuZ-T_p2-NFYrktyNNNEEg-1T_XZm81E64cj1biGiRQX-jMDw1KFA9cGrutFJ_tTGtKuZC49a3gmomzI2zZPxyHB6vm1u-V50IZn-sr9X6rnC6Op8lyW8oyEiVTjYJEUFdqU5NiJrueVdm4kdjDe5IIYHc3tx_WGZlpnHTZl4q2wZTq7pLaPbKEHfbNj6VaDv5KEkbFfZNYcpYEkstwEVfW8ELXG_EtlGIyhRtfZqMqYSVSK3rGlZ5yZpgCdXw0IpBVjrabIZkDzX4Fw-2luQ_gQEwk8Ey4y5oRDSRluAZNkGPMWK-zQCZW3B9rUVCWfDhciXjOJwyP7Tb2YgH_JJCS6r1xz0coy88fgTcssdjaIiv5VqU2swdVpaqoj_71NiFdMJ2KbzMwMBuPDXhNog6_L17tFzRgZOXGCIpf0p1fZZX7qmmVzJ1e3UUVNXx9i3RnBi3tEQG7BR6v69VHHu6XGOVu2iehXuLWc4Pg_GZyOp5bD=s134-no"
+                                class="img-responsive">
+                            Play The Video
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 hidden-sm hidden-xs text-center img-video wow fadeIn">
+                    <a href="https://www.youtube.com/watch?v=Hn89qD03Tzc" class="popups-img-video">
+                        <img alt="img-app-loading"
+                            src="https://lh3.googleusercontent.com/Z_7h95eFJ5P3SRbj0scNVj2BWEUexZaaelhvAn-q_b4JawtYzjE6Qo-v5WZfGqXz8yM0iIs3omwLg7jA4eRfuQbX07FNmJuWNxLWP4_tj4LO7LMh-t3lyOcG00pzhkyJdxRZsCOSfPAVTd7paGwViDXldIhwGtEL1bnvdYBwXLPnWW4SQuZ-T_p2-NFYrktyNNNEEg-1T_XZm81E64cj1biGiRQX-jMDw1KFA9cGrutFJ_tTGtKuZC49a3gmomzI2zZPxyHB6vm1u-V50IZn-sr9X6rnC6Op8lyW8oyEiVTjYJEUFdqU5NiJrueVdm4kdjDe5IIYHc3tx_WGZlpnHTZl4q2wZTq7pLaPbKEHfbNj6VaDv5KEkbFfZNYcpYEkstwEVfW8ELXG_EtlGIyhRtfZqMqYSVSK3rGlZ5yZpgCdXw0IpBVjrabIZkDzX4Fw-2luQ_gQEwk8Ey4y5oRDSRluAZNkGPMWK-zQCZW3B9rUVCWfDhciXjOJwyP7Tb2YgH_JJCS6r1xz0coy88fgTcssdjaIiv5VqU2swdVpaqoj_71NiFdMJ2KbzMwMBuPDXhNog6_L17tFzRgZOXGCIpf0p1fZZX7qmmVzJ1e3UUVNXx9i3RnBi3tEQG7BR6v69VHHu6XGOVu2iehXuLWc4Pg_GZyOp5bD=s134-no"
+                            class="img-responsive video-click"><!-- Img For video -->
+                        <img alt="img-app-loading"
+                            src="https://lh3.googleusercontent.com/uQvs-LhoqyZfXPwqpl_nFPQHlNTli06j4ViFs7jJaiFf3M1ueAOdtCQWFwH0pY2XlaL3921RhptRcHMxgnIkV9y34MP00WdfAt_ylmETn749zlpkHZDIWxSIc6EY_IwpatL2H7I2cGWB29bYkyLoJ1y9Qtw5scSP7rFkd0NEPthKW9PobDHkVZz-qx_5V34jQwHKcNn6aHpCZTfE08Df1OuxmUtV6cztDb8JbYnIBuLHYMRrBCceL21by6Q4t_y-qhnKtEUQyeEiSAda2GjLW124_amYB4n1BQre8CWMBZO_9DS4dOXt1e5GuBdF7hwEjkDZRYHnefB57b_5Ooa4aW5pK4QPyvBenelDg1hVayo_mVlMoCvuiip_NFmFEWHplRZz4i1CuCghOhYYKKh7wx3dGTwjDi6GiEWqWysK9RSEDuBt3HVpGeUu6F02yhjlqQZYmC9QOX3m4otLJ8u43YhetAB2NUp7bYtwf7ATXR-wxg2IHPKhQHdurd6zjPhfXAFT3myGUk26OyO3pJWu5emblnF0tQpPl2PlS3IcPzrsI5PSVGWQhHfKvxUb0rogOxQE6XlIhc0M7EOefgUHxgyJJF0sp2WLTGS5P3pvfpgMiFac1HVKhgLKseK0p0mVwJrsZPr-BaGh3oZb11mv5i6q-XoAFSPb=w533-h350-no"
+                            class="img-responsive"> <!-- Img For video -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" data-parallax="scroll">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center hidden"> Testemonial </h2>
+                <div class="col-md-12 slider-testimonial">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-1.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-2.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-3.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-4.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-5.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-6.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-7.png' />
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img alt="img-app-loading" src='./assets/images/testemonial/testemonial-8.png' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">
+                    One Simple Plan
+                </h2>
+                <p class="text-center">
+                    Get access to both <strong>User</strong> and <strong>Delivery</strong> apps in a single affordable
+                    package.
+                    Enjoy powerful features, dark mode, language switch, and easy customization — all included.
+                </p>
+                <div class="col-md-4 wow second-div fadeIn"></div>
+                <div class="col-md-4 wow second-div fadeIn">
+                    <div class="container-pricing text-center active">
+                        <div class='details-price'>
+                            <!-- <div class="price"><span>$15.00</span></div>
+                            <span class="time">/month</span>
+                             -->
+                            <div class="old-price" style="text-decoration: line-through; color:#999; font-size:16px;">
+                                $35.00
+                            </div>
+
+                            <!-- New Price -->
+                            <div class="price" style="font-size:32px; font-weight:bold; color:#FF5722;">
+                                $19.00
+                            </div>
+
+                            <!-- Discount Badge -->
+                            <div class="discount-badge"
+                                style="background:#4CAF50; color:#fff; display:inline-block; padding:3px 10px; border-radius:20px; font-size:14px; margin-top:5px;">
+                                Save 45%
+                            </div>
+                            <div class="type-price">
+                                <span>START UP</span>
+                            </div>
+                        </div>
+                        <div class="features-price">
+                            <ul style="list-style:none; padding:0; margin-top:15px; color:#444;">
+                                <li>✔️ 2 Apps (User + Delivery)</li>
+                                <li>✔️ Normal Support</li>
+                                <li>✔️ Free Updates</li>
+                                <li>✔️ Easy Customization</li>
+                                <li>✔️ Secure & Reliable</li>
+                                <li>✔️ Dark Mode Supported</li>
+                                <li>✔️ Switch Language (AR / EN)</li>
+                                <li>✔️ Change Main Color Easily</li>
+                            </ul>
+                        </div>
+                        <a class="btn-appsun btn"
+                            style="background:#FF5722; color:#fff; padding:10px 25px; border-radius:25px; margin-top:15px; display:inline-block;">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".3s"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-app">
+        <div class="container">
+            <div class="row" style="display: flex;">
+
+                <div class="col-md-7 col-sm-7  wow fadeIn"
+                    style="display: flex;flex-direction: column;justify-content: center;align-items: flex-start;">
+                    <h2 style="padding-left: 0;"> download Apps </h2>
+                    <p>
+                        Get our app and enjoy a seamless experience on both <strong>User</strong> and
+                        <strong>Delivery</strong> apps.
+                        Available on all devices with easy access, fast performance, and all features included.
+                    </p>
+                    <h4>Download From</h4>
+                    <!-- <div class="download-app-phone">
+                        <a herf='#'>
+                            <img alt="img-app-loading"
+                                src='https://lh3.googleusercontent.com/p2gYUDo_qV6bjltgEp4jEVj6qdtyO10h8BRvp4EMIEuEBUc0kFs8IIhPR-sgkodl4hm2oPKqs5ubY2qoL5onFCrc8v_WY0RifeLXWGeM8f-wiUIUahmgmhLgqb7Vo0D51KhD1EnvUINj-lllv7PLkclHqOf7nUjBIkYFYRPJ9b3ImZIPq8RraRDz4NGXLMjAS4ka2UgGq16R9To_vyQfc7KhYh_rKdYNXbh8rCbatP_mwfmOqGDTGE2mc1YWHpjFaCCuAboaNb_xzoH0R4QDKqhB9hxq3MY0FdiZCI8XyAfbt7bGj4CZ55MwbjWb3eC-KNgPX6rXBbAA3jllnkVAxY5Zc_-h-TEFej3nWz2_x1q1aTZ3uIajVFNX2qpaJqok1NNI0XKUD3tuNH1BtRgVzctBR93-CYziashuJHSwqAarWjwJLFHulS0vZuso-_aLKog0OHrGjNmqozD7aIi5xQFPm-VMuHAVwHY-b9hZvmXvdMtLoRcUtm5eQSJE4RgmNEmqvbgyfOVCPI77okcr4lNCXzpuBrrg2UJ_utdt0wjDJck7cWceSixT51QS_K64B_NSaLw-Jl6RuzaAbabrLrTYkyp-aPVU8alNHUdjW02GXI4qPFQuKwK_eymvc9dOIN5FN0v0XLO6cZtRxVK6Fx1OFgwtedGr=w133-h38-no'
+                                class="img-responsive">
+                        </a>
+                        <a href="#">
+                            <img alt="img-app-loading"
+                                src='https://lh3.googleusercontent.com/N8Y6QigPer0XdmOUDzrpMrGMZ3mfKh2lp7z8FnbiNNDpyBmnoGgtMrty6tMmpsLbAAP_W4BJv1XYYy2-saiOhMESPjDwJ6gvTZQLXu_N9giRhM8GHnWWNUjcqHnu6nF740TcVxvKGQi5iT1oVaD-8Pmv-sG3Wa6Sf8Z2u0KFib_eGo06-LYodVA-kBIwlaJJTb38cWSSINsuGwfYe89RR51-bzrcXiAfEAdOLyEdhNvX9ou7gpDBua1N9C4d78veLa1QvlAPMfYiIvsGQEv_-Kgm7MdBA--hREpo8a8rr-Movd0LJtVohv1jw4nYHbMgYfb2AaDOMLCdkRFvpF6BDQ-V1Zv0H1g0aGHzLE7SuI7eilbCgp2sfDsM-rNHCroIfcOE4EiZTo6Uf86bjyvfZ8e_P2SrFaBJy6aSQrhL69PfqtqnKCRvqLHXfSd0vELQpAFsFyS5B2Whe0N7VSpQ-HM1gWO7Jv7kA3VkwG_nLickaYr57HN4LJryesVQjyK627nXq1Wd9bexA9Ea26xaQlgHm14tb4ea-fr16kFRYXH_hqNIBpZdDaD_HAXfIXtEEJTJ6htKa1WxYTrRO1xhmNW5k3i2ac0JMym0jIc_W4hmHXWr1XfaBp-lgI063kLdvr4fv3s4wT6VouVfVrSdS3x6npoPVWYT=w132-h35-no'
+                                class="img-responsive">
+                        </a>
+                    </div> -->
+                </div>
+                <div class="col-md-5 col-sm-5 image-mobile-down wow fadeIn hidden-xs over-flow-faq"
+                    data-wow-delay=".1s">
+                    <img alt="img-app-loading" src="./assets/images/downloadapp.png" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teams-app">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center"> About Author</h2>
+                <div class="col-md-12 slider-team slick-initialized slick-slider">
+                    <div class="slick-list draggable">
+                        <div class="slick-track author-id"
+                            style="opacity: 1;width: 461px;transform: translate3d(0px, 0px, 0px);">
+                            <div class="slick-slide slick-current slick-active" data-slick-index="0"
+                                aria-hidden="false">
+                                <div>
+                                    <div class="content-team"
+                                        style="z-index: 2;justify-content: center;display: inline-block;width: 100%;text-align: center;align-items: center;display: flex;flex-direction: column;">
+                                        <div class="content-img"
+                                            style="z-index: 2;justify-content: center;display: flex;overflow: hidden;border-radius: 121px;width: 200px;">
+                                            <!-- Image For Team -->
+                                            <img style="width: auto;height: 190px;margin: 0 auto;border-radius: 15px;scale: 4;transform: translate(-2px, 66px);"
+                                                alt="img-app-loading" src="./images/sceenshot/MohamedAlaa.png"
+                                                class="img-responsive img-center">
+                                            <!-- Hover For Team To Content For Social Media For Him -->
+                                            <div class="parent-hover"
+                                                style="width: auto;height: 190px;margin: 0 auto;border-radius: 15px;border-radius: 20px;">
+                                                <div class="table-center">
+                                                    <div class="cell-tabel">
+                                                        <a href="https://github.com/moahmed123" target="_blank"
+                                                            tabindex="0">
+                                                            <i class="fa fa-github" aria-hidden="true"
+                                                                style="  font-size: 17px;"></i>
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/in/mohamed-alaa-75baa2104/"
+                                                            target="_blank" tabindex="0">
+                                                            <i class="fa fa-linkedin" aria-hidden="true"
+                                                                style="    font-size: 17px;"></i>
+                                                        </a>
+                                                        <a href="https://twitter.com/mohamedll14" target="_blank"
+                                                            tabindex="0">
+                                                            <i class="fa fa-twitter" aria-hidden="true"
+                                                                style="    font-size: 17px;"></i>
+                                                        </a>
+                                                        <a href="https://www.youtube.com/channel/UCeZIhm2ED04iUw_WyeeEuag?view_as=subscriber"
+                                                            target="_blank" tabindex="0">
+                                                            <i class="fa fa-youtube" aria-hidden="true"
+                                                                style="    font-size: 17px;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-team text-center" style="    padding: 50px 0;
+                        transform: translate(0px, -35px);
+                        border-radius: 15px;">
+                                            <!-- Name -->
+                                            <h3>Moahmed Alaa</h3>
+                                            <!-- Postion For Him -->
+                                            <p><strong>MERN Stack Developer | Cross-Platform App Developer</strong></p>
+                                            <!-- Some Details For Him Or Her -->
+                                            <p>
+                                                Passionate and results-driven Web Developer with proven experience in
+                                                building modern, responsive web and mobile applications.
+                                                Skilled in the full MERN Stack: <strong>MongoDB, Express.js, React.js,
+                                                    and Node.js</strong>, along with <strong>Redux, React Native, Expo,
+                                                    NextJs, Tailwind, and CSS</strong>.
+                                                Demonstrated ability to deliver efficient, maintainable solutions and
+                                                contribute effectively within cross-functional teams.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <h3 class=" wow fadeInUp">Food Delivery</h3>
+                <p class="text-center about-footer wow fadeInUp" data-wow-delay=".2s">
+                    is a complete mobile solution built with React Native CLI & Expo, featuring two
+                    applications <strong>User App &</strong> <strong>Delivery App</strong>
+                </p>
+                <ul class=" wow fadeInUp" data-wow-delay=".4s">
+                    <li class="facebook">
+                        <a href="https://www.linkedin.com/in/mohamed-alaa-%F0%9F%87%B5%F0%9F%87%B8-75baa2104/"
+                            target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true" style="    font-size: 17px;"></i>
+                        </a>
+                    </li>
+                    <li class='github'>
+                        <a href='https://github.com/moahmed123' target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright wow fadeInUp" data-wow-delay=".6s">
+                    Copyright © <span id="currentYear"></span> . All rights reserved Designed By MohamedAlaa
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/1.12.0.jquery.min.js"></script>
+
+    <!-- bootstrap.min.js -->
+    <script src="js/parallax.min.js"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- html5shiv.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <!-- smoothscroll.js -->
+    <script src="js/smoothscroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/anime.js"></script>
+    <!-- magnific -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Mailer-->
+    <!-- particles-->
+    <script src="js/particles12345678.js"></script>
+    <script src="js/particles8.js"></script>
+    <!-- formsubmit.js / main.js / changecolor.js -->
+    <script src="js/all.js"></script>
+    <script src="js/navparticlesblack.js"></script>
+
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function showApp(app) {
+            const userApp = document.querySelector(".user_app");
+            const deliveryApp = document.querySelector(".delivery_app");
+            const buttons = document.querySelectorAll(".app-switch-btn");
+
+            // const sectionUserAppScreenshots = document.querySelectorAll(".screen-shots.user-app");
+            // const sectionDeliveryAppScreenshots = document.querySelectorAll(".screen-shots.delivery-app");
+            const sectionUserAppScreenshots = document.getElementById("screenshot");
+            const sectionDeliveryAppScreenshots = document.getElementById("screenshot_delivery");
+
+            console.log(sectionUserAppScreenshots, sectionDeliveryAppScreenshots, app)
+
+            if (app === "user_app") {
+                sectionUserAppScreenshots.style.display = "block";
+                sectionDeliveryAppScreenshots.style.display = "none";
+            } else {
+                sectionUserAppScreenshots.style.display = "none";
+                sectionDeliveryAppScreenshots.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

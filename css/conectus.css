@@ -1,0 +1,233 @@
+
+*{
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0;
+    line-height: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.breadcrumbs h6{
+	 font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-top: 7px;
+}
+.breadcrumbs{
+    padding-top: 3px;
+	letter-spacing: 1px;
+	background: rgba(245, 245, 245, 0.67);
+}
+.breadcrumbs ul{
+    list-style: none;
+    padding: 0px 0px;
+    text-align: left;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+.breadcrumbs ul>li{
+	display: inline-block;
+}
+.breadcrumbs li:first-of-type{
+   	color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.breadcrumbs li:last-of-type{
+    color: #0844a5;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 13px;
+}
+.breadcrumbs li + li{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.breadcrumbs li + li:before{
+    color: #0844a5;
+    content: "\f105";
+    font-family: "fontawesome";
+    font-weight: normal;
+    padding: 0 5px;
+}
+/** Section Gradients **/
+.contact-gradients{
+	padding: 110px 0px;
+    padding-bottom: 80px;
+	color: #FFF;
+}
+.contact-gradients.btn-appsun,
+.contact-gradients.btn-appsun:hover{
+    padding: 110px 0px;
+    padding-bottom: 80px;
+}
+.contact-gradients .icon-gradient i:first-of-type{
+    position: absolute;
+    font-size: 13em;
+    right: 0;
+    margin-right: 87px;
+}
+.contact-gradients .icon-gradient i:last-of-type{
+	position: absolute;
+    font-size: 7em;
+    right: 0;
+    margin-right: 78px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: -25px
+}
+.contact-gradients h2{
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font: 300 58px Oxygen,sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-gradients h2 span{
+    font-weight: 800;
+    padding-left: 8px;
+    font: 500 58px Oxygen,sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-gradients p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 26px;
+    font-size: 17px;
+    font-weight: 500;
+}
+/** Section Space **/
+.section-space{
+    background: #fff;
+    padding: 80px 0px;
+    padding-bottom: 135px;
+}
+.section-space .text h3{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .1px;
+    font-size: 30px;
+}	
+.section-space .text p{
+    text-align: center;
+    line-height: 29px;
+    padding-top: 11px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.section-space .text{
+    margin-bottom: 35px;
+}
+.section-space .icon-contact{
+	position: relative;
+    height: 135px;
+}
+.section-space .icon-contact i:first-of-type{
+	 position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 10em;
+    color: #c1c1c1;
+}
+.section-space .icon-contact i:last-of-type{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 4em;
+    color: #0844a5;
+}
+.section-space .details h4{
+    font-weight: 600;
+}
+.section-space .details{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+/** Section Form **/
+.section-form{
+	padding: 80px 0px;
+    background: #fafafa;
+}
+.section-form form .form-group label{
+    margin-bottom: 13px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.section-form form h3{
+    padding: 4px 0;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+}
+.section-form form input[type='text'],
+.section-form form input[type='email']{
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    height: 45px;
+}
+.section-form form .form-group textarea{
+	border: 1px solid #ccc;
+    padding: 12px 20px;
+    resize: none;
+}
+.section-form form .radio{
+	padding-bottom: 15px;
+}
+.section-form form .btn-contact{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #397cd6;
+    background: #397cd6;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+/** Responsive **/
+/*==========================
+ *   End Page Contact Us 
+ *=========================*/
+/** Media Query **/
+@media(max-width: 767px){
+	.body-call{
+		height: 220px;
+	}
+}
+@media(max-width: 480px){
+	.inner_searsh .breadcrumbs ul {
+	     margin-bottom: 5px;
+    	font-size: 11px;
+    	text-align: left;
+	}	
+}
+@media(max-width: 320px){
+	.inner_searsh .breadcrumbs ul {
+   		 margin-bottom: 5px;
+   		 font-size: 9px;
+	}
+	.inner_searsh .contact-gradients h2 {
+    	font: 300 46px Oxygen,sans-serif;
+   
+	}
+}
+/** Media Query **/
+

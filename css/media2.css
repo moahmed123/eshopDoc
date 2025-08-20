@@ -1,0 +1,60 @@
+
+@media (min-width: 992px) and (max-width: 1125px) {
+    .coming-soon .contant-prag {
+        margin: 60px 195px;    
+    }
+}
+
+@media(max-width: 991px) {
+    .coming-soon h2{
+        font-size: 34px;    
+        letter-spacing: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .coming-soon h2{
+        font-size: 30px;
+        letter-spacing: 23px;
+    }
+    .email-input, .email-input:focus, .email-input:hover{
+        width: 307px;
+    }
+    .coming-soon .aboutUsbtn {        
+        font-size: 12px;        
+        padding: 15px 15px;        
+        margin-left: -94px;
+    }
+  
+}
+
+@media (max-width: 480px) {    
+  .coming-soon h2{
+        font-size: 27px;
+        letter-spacing: 12px;
+    }
+    .email-input::placeholder {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+		  
+    .coming-soon h2 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .coming-soon h4{
+        font-size: 13px;
+    }
+    .email-input, .email-input:focus, .email-input:hover {
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 360px){	
+  
+}
+

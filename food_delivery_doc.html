@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🍔 Food Delivery App (React Native) — Project Overview</title>
+  <meta name="description"
+    content="Modern food delivery application built with React Native CLI. Users can browse restaurants, place orders, track deliveries in real-time, and delivery partners can manage their assigned orders." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --muted: #9fb0c9;
+      --text: #eef5ff;
+      --accent: #f59e0b;
+      --accent-2: #60a5fa;
+      --border: #1f2a37;
+      --chip: #1b2330;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 85% -10%, rgba(96, 165, 250, .25), transparent 60%),
+        radial-gradient(1000px 700px at -15% 110%, rgba(245, 158, 11, .2), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      align-items: center;
+      grid-template-columns: 80px 1fr;
+      margin: 20px 0 10px;
+    }
+
+    .logo {
+      height: 72px;
+      width: 72px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent-2), var(--accent));
+      color: #001226;
+      font-weight: 800;
+      font-size: 24px;
+      box-shadow: 0 10px 30px rgba(245, 158, 11, .25);
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+
+    .title p {
+      margin: 4px 0 0;
+      color: var(--muted);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: 1.1fr .9fr;
+      }
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), transparent), var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .list {
+      padding-left: 18px;
+      margin: 10px 0;
+    }
+
+    .list li {
+      margin: 6px 0;
+    }
+
+    .kbd {
+      background: #0e141b;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, monospace;
+      font-size: 12px;
+    }
+
+    pre {
+      margin: 12px 0;
+      background: #0a0f15;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      overflow: auto;
+    }
+
+    code {
+      font-family: ui-monospace, monospace;
+      font-size: 13px;
+      color: #cde3ff;
+    }
+
+    .two-col {
+      display: grid;
+      gap: 18px;
+    }
+
+    @media (min-width: 760px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      border: 1px solid var(--border);
+      background: #0e141b;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      background: #0e141b;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 0 16px;
+      font-size: 14px;
+    }
+
+    .toc {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .toc a {
+      background: #0e141b;
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .note {
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+      color: #fce7c6;
+    }
+
+    .run-steps code {
+      color: #ffe1b8;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      background: #0e141b;
+      color: var(--text);
+      border-radius: 8px;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+
+    .code-wrap {
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FD</div>
+      <div class="title">
+        <h1>🍔 Food Delivery App (React Native)</h1>
+        <p>A modern food delivery application built with React Native CLI. Designed for both users (customers) and
+          delivery partners to ensure a seamless ordering and delivery experience.</p>
+        <div class="toc">
+          <a href="#structure">Project Structure</a>
+          <a href="#key-features">Key Features</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#run">How to Run</a>
+          <a href="#notes">Notes</a>
+        </div>
+        <div class="chips">
+          <span class="chip">React Native CLI</span>
+          <span class="chip">React Native expo</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">React Navigation</span>          
+          <span class="chip">Dark Mode</span>
+          <span class="chip">Switch Language (AR / EN)</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="structure" class="grid">
+      <article class="card">
+        <h2>📂 Project Structure</h2>
+        <div class="code-wrap">
+          <button class="copy-btn" data-copy="tree">Copy</button>
+          <pre><code id="tree">
+├── locales/
+├── ar/             # Arabic localization files (JSON, translations, etc.)
+├── en/             # English localization files (JSON, translations, etc.)
+src/
+├── assets/         # Images, fonts, icons, and other static assets
+    └── *.png                     # Icons & images
+├── components/     # Reusable UI components
+│   ├── Account/    # Account-related components (login, profile, settings)
+│   ├── Cart/       # Shopping cart components (cart list, checkout, etc.)
+│   ├── Category/   # Category-related components (category list, filters)
+│   └── Home/       # Home screen components (banners, featured items)
+├── navigation/     # Navigation configuration (stack, tabs, routes)
+├── screens/        # Main application screens (pages composed of components)
+│   │   ├── HomeScreen.tsx        # Browse restaurants
+│   │   ├── CartScreen.tsx        # Shopping cart
+│   │   ├── Orders.tsx            # order
+│   │   └── ProfileScreen.tsx     # User profile
+├── services/       # API calls, data fetching, and business logic
+│   ├── api.ts                    # API integration
+│   └── notifications.ts          # Push notifications
+├── styles/         # Global styles, themes, and shared styling utilities
+├── ThemeContext/
+│   └── ThemeContext.tsx          # Theme provider and custom hooks for dark/light mode
+└── utils/          # Utility functions and helpers (formatting, validation)
+
+  </code></pre>
+        </div>
+      </article>
+      <aside class="card">
+        <h2>✨ Highlights</h2>
+        <!-- <div class="feature">
+          <div class="icon">🍽️</div>
+          <div>Restaurant browsing with menus</div>
+        </div> -->
+        <div class="feature">
+          <div class="icon">🛒</div>
+          <div>Cart & checkout system</div>
+        </div>               
+        <div class="feature">
+          <div class="icon">💳</div>
+          <div>Multiple payment options</div>
+        </div>
+        <div class="feature">
+          <div class="icon">🔔</div>
+          <div>notifications</div>
+        </div>
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <div>Easy Customization</div>
+        </div>
+        <div class="feature">
+          <div class="icon">🔒</div>
+          <div>Secure & Reliable</div>
+        </div>
+        <div class="feature">
+          <div class="icon">🌙</div>
+          <div>Dark Mode Supported</div>
+        </div>
+        <div class="feature">
+          <div class="icon">🌍</div>
+          <div>Switch Language (AR / EN)</div>
+        </div>
+        <div class="feature">
+          <div class="icon">🎨</div>
+          <div>Change Main Color Easily</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="key-features" class="card" style="margin-top:18px;">
+      <h2>📌 Key Features</h2>
+      <div class="two-col">
+        <ul class="list">
+          <li>🍔 Browse restaurants & cuisines</li>
+          <li>🛒 Cart & seamless checkout</li>          
+          <li>💳 Secure multiple payment methods</li>
+        </ul>
+        <ul class="list">
+          <li>🚴 Delivery partner order management</li>
+          <li>🌍 Switch Language (AR / EN)</li>
+          <li>🌑 Dark mode support</li>
+          <li>🔔 Smart notifications for orders & promos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tech" class="card" style="margin-top:18px;">
+      <h2>🔧 Tech Stack</h2>
+      <div class="badges">
+        <span class="badge">React Native CLI & expo</span>
+        <span class="badge">TypeScript</span>
+        <span class="badge">React Navigation</span>                
+      </div>
+    </section>
+
+    <section id="run" class="card run-steps" style="margin-top:18px;">
+      <h2>🚀 How to Run</h2>
+      <ol class="list">
+        <li>Install dependencies:</li>
+      </ol>
+      <div class="code-wrap">
+        <button class="copy-btn" data-copy="install">Copy</button>
+        <pre><code id="install">npm install
+# or
+yarn</code></pre>
+      </div>
+      <ol class="list" start="2">
+        <li>Run the **User App**:</li>
+      </ol>
+      <div class="code-wrap">
+        <button class="copy-btn" data-copy="android-user">Copy</button>
+        <pre><code id="android-user">cd user
+npx react-native run-android</code></pre>
+      </div>
+      <div class="code-wrap">
+        <button class="copy-btn" data-copy="ios-user">Copy</button>
+        <pre><code id="ios-user">cd user
+npx react-native run-ios</code></pre>
+      </div>
+      <ol class="list" start="3">
+        <li>Run the **Delivery Partner App**:</li>
+      </ol>
+      <div class="code-wrap">
+        <button class="copy-btn" data-copy="android-delivery">Copy</button>
+        <pre><code id="android-delivery">cd delivery
+npx react-native run-android</code></pre>
+      </div>
+      <div class="code-wrap">
+        <button class="copy-btn" data-copy="ios-delivery">Copy</button>
+        <pre><code id="ios-delivery">cd delivery
+npx react-native run-ios</code></pre>
+      </div>
+    </section>
+
+    <section id="notes" class="card" style="margin-top:18px;">
+      <h2>📄 Notes</h2>
+      <ul class="list">
+        <li>User and Delivery apps share common components where possible.</li>                
+        <li>Dark mode and Switch Language (AR / EN) supported globally with <span class="kbd">ThemeContext</span>.</li>
+      </ul>
+      <p class="note">Tip: Optimize restaurant images (<span class="kbd">.webp</span>, <span class="kbd">.avif</span>)
+        for faster loading.</p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Food Delivery App • Built with ❤️ using React Native Power by <a href="https://codecanyon.net/user/m_alaa?ref=M_Alaa">Mohamed Alaa</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-copy');
+        const text = document.getElementById(id)?.innerText || '';
+        navigator.clipboard.writeText(text).then(() => {
+          const prev = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(() => btn.textContent = 'Copy', 1200);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/*
+    Template Name   :  
+    Template URI    : 
+    Description     : 
+    Author          : Mohamed Alaa Abas
+    Author URI      : https://themeforest.net/user/m_alaa 
+    Author Facebook : 
+    Author Email    : mohamed_ll14@yahoo.com .
+**/
+
+/************************
+   ** Start Framework ** 
+ ***********************/
+.btn-appsun,
+.btn-appsun:hover,
+.btn-appsun:focus,
+.uigradient,
+.video-show .play-video,
+.download-app .download-app-phone a,
+.download-app .download-app-phone a:hover,
+.faq-app .panel-default > .panel-heading,
+.navbar-default.active,
+.color-mobile-nav,
+.features .content-features.active,
+.blog-content .auther-details,
+.PR-background{    
+    background: #a73737;
+    background: -webkit-linear-gradient(to left, #7a2828, #a73737); 
+    background: -moz-linear-gradient(to left, #7a2828, #a73737);
+    background: -ms-linear-gradient(to left, #7a2828, #a73737);
+    background: -o-linear-gradient(to left, #7a2828, #a73737);        
+    background: linear-gradient(to left, #7a2828, #a73737); 
+}
+body::-webkit-scrollbar-thumb{
+    background: #a73737;
+    background: -webkit-linear-gradient(to left, #7a2828, #a73737); 
+    background: -moz-linear-gradient(to left, #7a2828, #a73737);
+    background: -ms-linear-gradient(to left, #7a2828, #a73737);
+    background: -o-linear-gradient(to left, #7a2828, #a73737);        
+    background: linear-gradient(to left, #7a2828, #a73737);
+}
+/******************************
+    **** Start Pricing  **** 
+ ******************************/
+.news-blog .container-news:hover .icon-city i,
+.news-blog .container-news.active .icon-city i,
+h2.error span:nth-of-type(2),
+.contact .btn-appsuncontact,
+.section-space .icon-contact i:last-of-type,
+.prag-not-found a, .prag-not-found a:hover,
+.pricing-section .container-pricing-two .details-price-two .type-price-two,
+.pricing-section.pricefive-container .box-price.active .title-price h3,
+.pricing-section.pricefive-container .box-price.active .price-seller h2{
+    color: #a73737;
+}
+/****************************
+    **** Start Teams  **** 
+ ****************************/
+.content-team .content-img .parent-hover{
+    background: rgba(167, 55, 55, 0.56);
+}
+.form-control:focus{
+    border-color: #a73737 !important;
+}
+
+/*******************************
+   *** Start Color Ploger   ***
+ *******************************/
+.blog-content .icon-slider,
+.blog-content.blog-two .bloger .img-post span,
+.pricing-section.pricefive-container .popular-price span,
+.pricing-section.pricefive-container .popular-price::before,
+.pricing-section.pricefive-container .popular-price::after{
+    background: #a73737;
+}
+.blog-content .bloger .years-comment,
+.blog-content .bloger .years-comment i,
+.blog-content .categores-box h3,
+.blog-content .populerpost-box h3,
+.blog-content .tages-box h3,
+.blog-content .categores-box ul li span,
+.blog-content .bloger .all-text-blog .loadmore,
+.blog-content .bloger .all-text-blog .loadmore:hover,
+.blog-content .bloger .all-text-blog .loadmore:after,
+.blog-content .comment-user .icons-comment ul li a,
+.blog-content .comment-user h6 span,
+.download-app h4,
+.pricing-section .container-pricing .price,
+.pricing-section .container-pricing .time{
+	color: #a73737 ;
+}
+.blog-content .bloger .all-text-blog blockquote {    
+    border-left: 5px solid #a73737;
+}
+
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun, 
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun:focus, 
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun:hover{
+    border: 1px solid #a73737;
+}
+.download-app h4:before{
+    border-color: #a73737;
+}
+/***********************
+*** Price Five 
+************************/
+.pricing-section.pricefive-container .btn-app button {
+    border: 2px solid #a73737;
+    color: #a73737;
+}
+.pricing-section.pricefive-container .box-price.active .btn-app button,
+.pricing-section.pricefive-container .btn-app button:hover{
+    background: #a73737;
+    background: -webkit-linear-gradient(to left, #7a2828, #a73737); 
+    background: -moz-linear-gradient(to left, #7a2828, #a73737);
+    background: -ms-linear-gradient(to left, #7a2828, #a73737);
+    background: -o-linear-gradient(to left, #7a2828, #a73737);        
+    background: linear-gradient(to left, #7a2828, #a73737);
+    box-shadow: 0 2px 4px #a73737;
+    border: none;
+    box-shadow: none;
+}
+.pricing-section.pricefive-container .popular-price::before, .pricing-section.pricefive-container .popular-price::after {
+    display: none;
+}
+/***********************
+*** Price Five 
+************************/

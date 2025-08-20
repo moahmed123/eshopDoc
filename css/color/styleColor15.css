@@ -1,0 +1,130 @@
+/*
+    Template Name   :  
+    Template URI    : 
+    Description     : 
+    Author          : Mohamed Alaa Abas
+    Author URI      : https://themeforest.net/user/m_alaa 
+    Author Facebook : 
+    Author Email    : mohamed_ll14@yahoo.com .
+**/
+
+/************************
+   ** Start Framework ** 
+ ***********************/
+.btn-appsun,
+.btn-appsun:hover,
+.btn-appsun:focus,
+.uigradient,
+.video-show .play-video,
+.download-app .download-app-phone a,
+.download-app .download-app-phone a:hover,
+.faq-app .panel-default > .panel-heading,
+.navbar-default.active,
+.blog-content .auther-details,
+.color-mobile-nav,
+.features .content-features.active,
+.PR-background{    
+    background: #7f060d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -moz-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -o-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -ms-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: linear-gradient(135deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+}
+body::-webkit-scrollbar-thumb{
+	background: #7f060d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -moz-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -o-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -ms-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: linear-gradient(135deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+}
+/******************************
+    **** Start Pricing  **** 
+ ******************************/
+.pricing-section .container-pricing .price,
+.contact .btn-appsuncontact,
+.section-space .icon-contact i:last-of-type,
+.pricing-section .container-pricing .time,
+.download-app h4,
+.news-blog .container-news:hover .icon-city i,
+.news-blog .container-news.active .icon-city i,
+h2.error span:nth-of-type(2),
+.prag-not-found a, .prag-not-found a:hover,
+.pricing-section .container-pricing-two .details-price-two .type-price-two,
+.pricing-section.pricefive-container .box-price.active .title-price h3,
+.pricing-section.pricefive-container .box-price.active .price-seller h2{
+    color: #7f060d;
+}
+/******************************
+    **** End Pricing  **** 
+ ******************************/
+.content-team .content-img .parent-hover{
+    background: rgba(127, 6, 13, 0.67);
+}
+/****************************
+   *** Start Contact  ***  
+ ****************************/
+.form-control:focus{
+    border-color: #7f060d !important;
+}
+
+/*******************************
+   *** Start Color Ploger   ***
+ *******************************/
+.blog-content .icon-slider,
+.blog-content.blog-two .bloger .img-post span,
+.pricing-section.pricefive-container .popular-price span,
+.pricing-section.pricefive-container .popular-price::before,
+.pricing-section.pricefive-container .popular-price::after{
+    background: #7f060d;
+}
+.blog-content .bloger .years-comment,
+.blog-content .bloger .years-comment i,
+.blog-content .categores-box h3,
+.blog-content .populerpost-box h3,
+.blog-content .tages-box h3,
+.blog-content .categores-box ul li span,
+.blog-content .bloger .all-text-blog .loadmore,
+.blog-content .bloger .all-text-blog .loadmore:hover,
+.blog-content .bloger .all-text-blog .loadmore:after,
+.blog-content .comment-user .icons-comment ul li a,
+.blog-content .comment-user h6 span{
+	color: #7f060d;
+}
+.blog-content .bloger .all-text-blog blockquote {    
+    border-left: 5px solid #7f060d;
+}
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun, 
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun:focus, 
+.pricing-section .container-pricing-four .price-btn-four .btn-appsun:hover{
+    border: 1px solid #7f060d;
+}
+.download-app h4:before{
+    border-color: #7f060d;
+}
+/***********************
+*** Price Five 
+************************/
+.pricing-section.pricefive-container .btn-app button {
+    border: 2px solid #7f060d;
+    color: #7f060d;
+}
+.pricing-section.pricefive-container .box-price.active .btn-app button,
+.pricing-section.pricefive-container .btn-app button:hover{
+	background: #7f060d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -moz-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -o-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: -ms-linear-gradient(315deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    background: linear-gradient(135deg, #000 50%, #000 50%, #000 50%, #7f060d 50%);
+    box-shadow: 0 2px 4px #7f060d;
+    border: none;
+    box-shadow: none;
+}
+.pricing-section.pricefive-container .popular-price::before, .pricing-section.pricefive-container .popular-price::after {
+    display: none;
+}
+/***********************
+*** Price Five 
+************************/

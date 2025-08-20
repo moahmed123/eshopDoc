@@ -1,0 +1,109 @@
+.footer{
+    padding: 80px 0;
+    background: #333;
+    color: #fff;
+}
+.footer h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 34px;
+    color: #949494;
+}
+.footer h4.logo i{
+    padding-right: 5px;
+}
+.footer .some-about-company{
+    padding: 0px 30px;
+    padding-right: 70px;
+    font-size: 15px;
+    letter-spacing: .6px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.footer .quick-link ul{
+    list-style: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+.footer .quick-link ul li{
+    padding: 3px;
+}
+.footer .quick-link ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .38s ease-in-out;
+    -webkit-transition: all .38s ease-in-out;
+    position: relative;
+}
+.footer .quick-link ul li a:before{
+    content: '';
+    border-color: transparent transparent #FFF transparent;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+    opacity: 0;
+    transition: all .38s ease-in-out;
+    -webkit-transition: all .38s ease-in-out;
+}
+.footer .quick-link ul li a:hover:before{
+    opacity: 1;
+    transform: translate(0,-9px);
+    -webkit-transform: translate(0,-9px);
+}
+.footer .contact-us{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer .contact-us li{
+    padding: 3px;
+}
+.footer .contact-us h6{
+    display: inline;
+    font-size: 15px;
+    letter-spacing: .8px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.footer .contact-us .phone{
+    padding-right: 13px;
+}
+
+footer{
+    padding: 15px 0;
+    color: #FFF;
+    background: #222;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer .icon-top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+footer .icon-top .fa-angle-double-up{
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 50%;
+    color: #3385da;
+    font-size: 23px;
+    font-weight: bold;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    box-shadow: 0px 1px 12px #c5c5c5;
+    -webkit-box-shadow: 0px 1px 12px #c5c5c5;
+}
+footer .icon-top .fa-angle-double-up:hover{
+    box-shadow: 0px 3px 19px #c5c5c5; 
+    -webkit-box-shadow: 0px 3px 19px #c5c5c5; 
+}
