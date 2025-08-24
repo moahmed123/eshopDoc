@@ -60,13 +60,148 @@
         .screen-shots img {
             border-radius: 20px;
         }
-        .author-id{
+
+        .author-id {
             width: 461px;
         }
+
         @media (max-width: 776px) {
-            .author-id{
+            .author-id {
                 width: 84% !important;
-            }   
+            }
+        }
+
+        .items-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 20px;
+        }
+
+        .item-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-image img {
+            width: 100%;
+            display: block;
+        }
+
+        .item-content {
+            padding: 15px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+
+        .item-author {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        /* .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #111;
+        } */
+
+        .portfolio .btn {
+            /* background: #009687; */
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .portfolio .preview.btn {
+            background: #009687;           
+        }
+
+        .portfolio .preview.btn:hover {
+            background: #009687;
+        }
+
+        .cart-btn {
+            background: #f1f1f1;            
+            color: #333;
+            margin-left: 8px;
+        }
+
+        .cart-btn:hover {
+            background: #ddd;
+        }
+
+        .no-link,
+        .no-link:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        .price {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-right: 5px;
+        }
+
+        .new-price {
+            color: #333;
+            font-weight: bold;
+            margin-right: 0px;
+            font-size: 16px;
+        }
+
+        .discount {
+            background: #e74c3c;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            /* font-weight: bold; */
+        }
+
+        .sales_component {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .portfolio {
+            background-color: #fff;
+            padding: 80px 0;
         }
     </style>
 
@@ -349,8 +484,61 @@
             </div>
         </div>
     </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center" style="color:#333;">My Portfolio</h2>
 
-    <section class="video-show">
+                <p class="text-center" style="color:#333; padding-bottom: 40px;">
+                    Explore my collection of high-quality digital products and templates.
+                </p>
+                <div class="items-section" id="cart-list">
+                    <!-- <div class="item-card">
+                    <div class="item-image">
+                        <a href="https://themeforest.net/item/appsun-app-landing-page/21310566?ref=M_Alaa"
+                            class="no-link">
+                            <img src="./assets/images/appsun.jpg" alt="Item">
+
+                        </a>
+                    </div>
+                    <div class="item-content">
+                        <a href="https://themeforest.net/item/appsun-app-landing-page/21310566?ref=M_Alaa"
+                            class="no-link">
+                            <h3 class="item-title">Appsun | App Landing Page</h3>
+                            <p class="item-author">by mohamed alaa in Themeforest
+                                 <span class="discount">-33%</span> 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="item-footer">
+                        <div>
+                            <span class="old-price">$29</span>
+                            <span class="new-price">$19</span>
+                            <div class="sales_component">22 Sales</div>
+                        </div>
+                        <div>
+
+                            <button class="btn">
+                                <a href="https://themeforest.net/item/appsun-app-landing-page/21310566?ref=M_Alaa"
+                                    class="no-link">
+                                    Live Preview
+                                </a>
+                            </button>
+                            <button class="btn cart-btn">
+                                <a href="https://themeforest.net/item/appsun-app-landing-page/21310566?ref=M_Alaa"
+                                    class="no-link">
+                                    🛒
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-show" style="background-color: #f1f1f1;">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12 text-video wow fadeIn">
@@ -439,8 +627,7 @@
                             </ul>
                         </div>
                         <div class="price-btn-two">
-                            <a class="btn-appsun btn"
-                                target="_blank"
+                            <a class="btn-appsun btn" target="_blank"
                                 href="https://codecanyon.net/item/fitness-allinone-react-native-fitness-ui-kit-expo-cli/59131394">Place
                                 An Order</a>
                             <h6> Order Now Get 10% Discount </h6>
@@ -450,7 +637,7 @@
                 </div>
                 <!-- End First price -->
                 <!-- Start First price -->
-                <div class="col-md-4 first-div wow fadeIn" data-wow-delay=".3s">                   
+                <div class="col-md-4 first-div wow fadeIn" data-wow-delay=".3s">
                 </div>
                 <!-- End First price -->
             </div>
@@ -463,8 +650,10 @@
                 <h2 class="text-center"> About Author</h2>
                 <div class="col-md-12 slider-team slick-initialized slick-slider">
                     <div class="slick-list draggable">
-                        <div class="slick-track author-id" style="opacity: 1;width: 461px;transform: translate3d(0px, 0px, 0px);">
-                            <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false">
+                        <div class="slick-track author-id"
+                            style="opacity: 1;width: 461px;transform: translate3d(0px, 0px, 0px);">
+                            <div class="slick-slide slick-current slick-active" data-slick-index="0"
+                                aria-hidden="false">
                                 <div>
                                     <div class="content-team"
                                         style="z-index: 2;justify-content: center;display: inline-block;width: 100%;text-align: center;align-items: center;display: flex;flex-direction: column;">
@@ -508,9 +697,9 @@
                         border-radius: 15px;">
                                             <!-- Name -->
                                             <h3>Moahmed Alaa</h3>
-                                            <!-- Postion For Him -->                                            
+                                            <!-- Postion For Him -->
                                             <p><strong>MERN Stack Developer | Cross-Platform App Developer</strong></p>
-                                            <!-- Some Details For Him Or Her -->                                            
+                                            <!-- Some Details For Him Or Her -->
                                             <p>
                                                 Passionate and results-driven Web Developer with proven experience in
                                                 building modern, responsive web and mobile applications.
@@ -536,11 +725,13 @@
             <div class="row text-center">
                 <h3 class=" wow fadeInUp">Fitness</h3>
                 <p class="text-center about-footer wow fadeInUp" data-wow-delay=".2s">
-                    A modern fitness mobile application built with React Native CLI, focused on helping users track workouts, view summaries, monitor progress, and manage personal fitness data.
+                    A modern fitness mobile application built with React Native CLI, focused on helping users track
+                    workouts, view summaries, monitor progress, and manage personal fitness data.
                 </p>
-                <ul class=" wow fadeInUp" data-wow-delay=".4s">                    
+                <ul class=" wow fadeInUp" data-wow-delay=".4s">
                     <li class="facebook">
-                        <a href="https://www.linkedin.com/in/mohamed-alaa-%F0%9F%87%B5%F0%9F%87%B8-75baa2104/" target="_blank">
+                        <a href="https://www.linkedin.com/in/mohamed-alaa-%F0%9F%87%B5%F0%9F%87%B8-75baa2104/"
+                            target="_blank">
                             <i class="fa fa-linkedin" aria-hidden="true" style="    font-size: 17px;"></i>
                         </a>
                     </li>
@@ -595,7 +786,128 @@
             a.click();
             document.body.removeChild(a);
         });
+        // Start render profile::
+        const products = [
+            {
+                id: 1,
+                title: "Appsun | App Landing Page",
+                oldPrice: 29,
+                newPrice: 19,
+                itemUploaded: "Themeforest",
+                Author: "Mohamed Alaa",
+                Sales: "22",
+                ProfileAuthorLink: "https://themeforest.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/appsun.jpg",
+                link: "https://themeforest.net/item/appsun-app-landing-page/21310566?ref=M_Alaa"
+            },
+            {
+                id: 2,
+                title: "Fitness – All-in-One React Native Fitness UI Kit (Expo + CLI)",
+                oldPrice: 35,
+                newPrice: 19,
+                itemUploaded: "Codecanyon",
+                Author: "Mohamed Alaa",
+                Sales: "2",
+                ProfileAuthorLink: "https://codecanyon.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/Fitness.png",
+                link: "https://codecanyon.net/item/fitness-allinone-react-native-fitness-ui-kit-expo-cli/59131394?ref=M_Alaa"
+            },
+            {
+                id: 3,
+                title: "Ishop – 2 - in -1 React Native Ecommerce App Template | Expo & CLI UI Kit",
+                oldPrice: 30,
+                newPrice: 22,
+                itemUploaded: "Codecanyon",
+                Author: "Mohamed Alaa",
+                Sales: "0",
+                ProfileAuthorLink: "https://codecanyon.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/Ishop.png",
+                link: "https://codecanyon.net/item/ishop-2-in-1-react-native-ecommerce-app-template-expo-cli-ui-kit/58897062?ref=M_Alaa"
+            },
+            {
+                id: 4,
+                title: "Foods | Multipurpose React native",
+                oldPrice: 29,
+                newPrice: 19,
+                itemUploaded: "codecanyon",
+                Author: "Mohamed Alaa",
+                Sales: "6",
+                ProfileAuthorLink: "https://codecanyon.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/AppFoods.png",
+                link: "https://codecanyon.net/item/foods-multipurpose-react-native/26143082?ref=M_Alaa"
+            },
+            {
+                id: 5,
+                title: "MySpace App - React Native CLI | Expo - Blog & Personal UI Template",
+                oldPrice: 25,
+                newPrice: 19,
+                itemUploaded: "Codecanyon",
+                Author: "Mohamed Alaa",
+                Sales: "0",
+                ProfileAuthorLink: "https://codecanyon.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/myspace.png",
+                link: "https://codecanyon.net/item/myspace-react-native-blog-personal-ui-template/58553892?ref=M_Alaa"
+            }
+        ];
 
+        let cart = products.map(product => ({ ...product, quantity: 1 }));
+
+        function renderCart() {
+            const cartList = document.getElementById("cart-list");
+            cartList.innerHTML = "";
+            cart.forEach(item => {
+                const div = document.createElement("div");
+                div.classList.add("item-card");
+                div.setAttribute("key", item.id);
+                let discountPercentage = Math.floor((item.oldPrice - item.newPrice / item.newPrice)) + "%";
+
+                div.innerHTML = `                                                            
+                    <div class="item-image">
+                        <a href="${item.link}"
+                            class="no-link">
+                            <img src="${item.image}" alt="Item">
+
+                        </a>
+                    </div>
+                    <div class="item-content">
+                        <a href="${item.link}" class="no-link">
+                            <h3 class="item-title">${item.title}</h3>
+                        </a>
+                         <a href="${item.ProfileAuthorLink}" class="no-link">
+                            <p class="item-author">
+                                by mohamed alaa in ${item.itemUploaded}                                
+                            </p>                            
+                        </a>
+                         <span class="discount">-${discountPercentage}</span> 
+                    </div>
+                    <div class="item-footer">
+                        <div>
+                            <span class="old-price">${item.oldPrice}$</span>
+                            <span class="new-price">${item.newPrice}$</span>                            
+                            ${item.Sales ? `<div class="sales_component">${item.Sales} Sales</div>` : ``
+                    }
+                        </div>
+                        <div>
+
+                            <button class="btn preview">
+                                <a href="${item.link}"
+                                    class="no-link">
+                                    Live Preview
+                                </a>
+                            </button>
+                            <button class="btn cart-btn">
+                                <a href="${item.link}"
+                                    class="no-link">
+                                    🛒
+                                </a>
+                            </button>
+                        </div>
+                    </div>                
+                `;
+                cartList.appendChild(div);
+            });
+        }
+        window.onload = renderCart;
     </script>
 
 </body>
