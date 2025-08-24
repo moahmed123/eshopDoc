@@ -100,19 +100,33 @@
         .Title-name {
             font-size: 80px !important
         }
+        .icon-hover:hover{
+            color:#ff8c2e !important ;
+        }
+        .bg-hover:hover{
+            background-color:#ff8c2e !important ;
+            color: #fff !important;
+        }
+        .bg-hover-gray:hover{
+            background-color:#c1c1c1 !important ;
+            color: #333 !important;
+        }
 
         @media (max-width: 776px) {
             .Title-name {
                 font-size: 60px !important
             }
-            .author-id{
+
+            .author-id {
                 width: 84% !important;
-            }  
+            }
+
             .testimonial .slick-slide img {
                 width: 100% !important;
                 margin: 0 auto;
             }
         }
+
         @media (max-width: 480px) {
             .Title-name {
                 font-size: 40px !important
@@ -241,12 +255,50 @@
                     <p class="wow fadeInUp" data-wow-delay=".5s">
                         Perfect for launching your own food delivery business or learning React Native development.
                     </p>
+                    <div style="display: flex; align-items: center;" class="wow fadeInUp" data-wow-delay=".7s">
+                        <div>
+                            <h5><strong>User App :</strong></h5>
+                            <div style="margin: 20px 0 30px 0;">
+                                <!-- <a data-wow-delay=".5s" href="https://your-apk-link.com/app-release.apk" target="_blank"
+                            class="btn" id="dowApkFitnessApp"
+                            style="background-color: '#009688';background-color: #eaeaea;color: #606060;padding: 12px 15px;margin-right: 10px;">
+                            <i class="fa fa-android wow fadeInUp" aria-hidden="true"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"></i>
+                            Download APK
+                        </a> -->
+                                <a data-wow-delay=".5s"
+                                    href="https://expo.dev/preview/update?message=Initial+commit%0A%0AGenerated+by+create-expo-app+3.4.2.&updateRuntimeVersion=1.0.0&createdAt=2025-08-24T14%3A07%3A32.166Z&slug=exp&projectId=95d14eec-3a98-4659-8e52-5facb8cf285f&group=e2fd233f-494b-47c4-b385-90d8a5ea768c"
+                                    target="_blank" class="btn bg-hover-gray"
+                                    style="background-color: '#009688';background-color: #f97f1d;color: #fff;padding: 12px 15px;">
+                                    📱 Preview on Expo
+                                </a>
+                            </div>
+                        </div>
+                        <div style="padding-left: 20px;">
+                            <h5><strong>Delivery (Rider) App :</strong></h5>
+                            <div style="margin: 20px 0 30px 0;">
+                                <!-- <a data-wow-delay=".5s" href="https://your-apk-link.com/app-release.apk" target="_blank"
+                            class="btn" id="dowApkFitnessApp"
+                            style="background-color: '#009688';background-color: #eaeaea;color: #606060;padding: 12px 15px;margin-right: 10px;">
+                            <i class="fa fa-android wow fadeInUp" aria-hidden="true"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"></i>
+                            Download APK
+                        </a> -->
+                                <a data-wow-delay=".5s"
+                                    href="https://expo.dev/preview/update?message=Initial+commit%0A%0AGenerated+by+create-expo-app+3.4.2.&updateRuntimeVersion=1.0.0&createdAt=2025-08-24T13%3A59%3A32.741Z&slug=exp&projectId=04c2cf85-b0c8-4adc-a8f6-0d8df27968f7&group=5ac45644-940f-4009-8893-3c622a600c8f"
+                                    target="_blank" class="btn bg-hover"
+                                    style="background-color: '#009688';background-color: #eaeaea;color: #606060;padding: 12px 15px;margin-right: 10px;">
+                                    📱 Preview on Expo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="icon-company">
                         <!-- Icon For android -->
-                        <i class="fa fa-android wow fadeInUp" data-wow-delay=".5s" aria-hidden="true"></i>
+                        <i class="fa icon-hover fa-android wow fadeInUp" data-wow-delay=".5s" aria-hidden="true"></i>
                         <!-- Icon For Apple -->
-                        <i class="fa fa-apple wow fadeInUp" data-wow-delay=".7s" aria-hidden="true"></i>
+                        <i class="fa icon-hover fa-apple wow fadeInUp" data-wow-delay=".7s" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-6 text-center hidden-sm hidden-xs">
@@ -754,7 +806,9 @@
                         <strong>Delivery</strong> apps.
                         Available on all devices with easy access, fast performance, and all features included.
                     </p>
-                    <h4>Download From</h4>
+                    <a class="smoothScroll" href="#about" style="text-decoration: none;">
+                        <h4>Download Apps</h4>
+                    </a>
                     <!-- <div class="download-app-phone">
                         <a herf='#'>
                             <img alt="img-app-loading"
