@@ -69,6 +69,9 @@
             .author-id {
                 width: 84% !important;
             }
+            .portfolio{
+                padding: 80px 20px !important;
+            }
         }
 
         .items-section {
@@ -142,8 +145,9 @@
             font-size: 14px;
             transition: background 0.2s;
         }
+
         .portfolio .preview.btn {
-            background: #009687;           
+            background: #009687;
         }
 
         .portfolio .preview.btn:hover {
@@ -151,7 +155,7 @@
         }
 
         .cart-btn {
-            background: #f1f1f1;            
+            background: #f1f1f1;
             color: #333;
             margin-left: 8px;
         }
@@ -176,13 +180,14 @@
             text-decoration: line-through;
             color: #888;
             margin-right: 5px;
+            font-size: 13px;
         }
 
         .new-price {
             color: #333;
             font-weight: bold;
             margin-right: 0px;
-            font-size: 16px;
+            font-size: 17px;
         }
 
         .discount {
@@ -825,6 +830,42 @@
                 link: "https://codecanyon.net/item/ishop-2-in-1-react-native-ecommerce-app-template-expo-cli-ui-kit/58897062?ref=M_Alaa"
             },
             {
+                id: 6,
+                title: "Molo | Multipurpose Coming Soon Bootstrap 4",
+                oldPrice: 9,
+                newPrice: 5,
+                itemUploaded: "Themeforest",
+                Author: "Mohamed Alaa",
+                Sales: "11",
+                ProfileAuthorLink: "https://themeforest.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/moloCommingSoon.jpg",
+                link: "https://themeforest.net/item/molo-multipurpose-coming-soon-bootstrap-4/21696006?ref=M_Alaa"
+            },
+            {
+                id: 7,
+                title: "Molopan | Multipurpose Personal Bootstrap 4",
+                oldPrice: 17,
+                newPrice: 9,
+                itemUploaded: "Themeforest",
+                Author: "Mohamed Alaa",
+                Sales: "29",
+                ProfileAuthorLink: "https://themeforest.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/Molopan.png",
+                link: "https://themeforest.net/item/molopan-multipurpose-personal-bootstrap-4/21844530?ref=M_Alaa"
+            },
+            {
+                id: 8,
+                title: "WDpolis - Personal Portfolio Template",
+                oldPrice: 12,
+                newPrice: 5,
+                itemUploaded: "Themeforest",
+                Author: "Mohamed Alaa",
+                Sales: "2",
+                ProfileAuthorLink: "https://themeforest.net/user/m_alaa/portfolio?ref=M_Alaa",
+                image: "./assets/images/WDpolis.jpg",
+                link: "https://themeforest.net/item/wdpolis-personal-portfolio-template/19410212?ref=M_Alaa"
+            },
+            {
                 id: 4,
                 title: "Foods | Multipurpose React native",
                 oldPrice: 29,
@@ -847,8 +888,9 @@
                 ProfileAuthorLink: "https://codecanyon.net/user/m_alaa/portfolio?ref=M_Alaa",
                 image: "./assets/images/myspace.png",
                 link: "https://codecanyon.net/item/myspace-react-native-blog-personal-ui-template/58553892?ref=M_Alaa"
-            }
+            },
         ];
+
 
         let cart = products.map(product => ({ ...product, quantity: 1 }));
 
