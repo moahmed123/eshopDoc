@@ -1298,17 +1298,16 @@
 
                 div.innerHTML = `                                                            
                     <div class="item-image">
-                        <a href="${item.link}"
-                            class="no-link">
+                        <a href="${item.link}" target='_blank' class="no-link">
                             <img src="${item.image}" alt="Item">
 
                         </a>
                     </div>
                     <div class="item-content">
-                        <a href="${item.link}" class="no-link">
+                        <a href="${item.link}" class="no-link" target='_blank'>
                             <h3 class="item-title">${item.title}</h3>
                         </a>
-                         <a href="${item.ProfileAuthorLink}" class="no-link">
+                         <a href="${item.ProfileAuthorLink}" class="no-link" target='_blank'>
                             <p class="item-author">
                                 by mohamed alaa in ${item.itemUploaded}                                
                             </p>                            
@@ -1325,14 +1324,12 @@
                         <div>
 
                             <button class="btn preview">
-                                <a href="${item.link}"
-                                    class="no-link">
+                                <a href="${item.link}" target='_blank' class="no-link">
                                     Live Preview
                                 </a>
                             </button>
                             <button class="btn cart-btn">
-                                <a href="${item.link}"
-                                    class="no-link">
+                                <a href="${item.link}" target='_blank' class="no-link">
                                     🛒
                                 </a>
                             </button>
